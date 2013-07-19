@@ -6,12 +6,13 @@ The designer additonally adds guards and rings to the placement to protect certa
 
 So for an automatic routing algorithm a lot of different constraints have to considered. There are even more obstacles than just the devices and already created routes, for example the routes should pass over guard rings. To solve this problem in the following chapter are two different approaches presented: One simple sequentially line expansion router and one extend version of the previous one, which selects all routes together in one step. But first I have to discuss the changes that were necessary for the implementation of the routing algorithms.
 
-\begin{figure}
-	\centering
-	\includegraphics[scale=.3]{FIG/miller_amplifier_routed_layout.png}
-   	\caption{routed layout of a miller amplifier}
-	\label{fig:miller_amplifier_routed_layout}
-\end{figure}
+%\begin{figure}
+%	\centering
+%	\includegraphics[scale=.3]{FIG/miller_amplifier_routed_layout.png}
+%  	\caption{routed layout of a miller amplifier}
+%	\label{fig:miller_amplifier_routed_layout}
+%\end{figure}
+PICTURE MISSING MILLER AMPLIFIER ROUTED LAYOUT
 
 \section{Changes for Routing in the existing Applications}
 
@@ -75,30 +76,33 @@ After the algorithm has selected start and target contact areas the next step is
 
 As the algorithm now has all the necessary information the actual line expansion routing can start. The main idea behind a line expansion router is that the routes are created sequentially. Every single step is based on a map of obstacles, which the route mustn't cross. From the starting point beginning always the next possible point of a route is calculated and the algorithm afterwards again applied to this partial problem. At the beginning of this recursive algorithm, as usual, the terminating condition is checked: If we have reached the target point. In every single step there are several decisions to be made: First the possible directions are grouped in good and bad directions [\ref{fig:good_and_bad_directions}]. Good directions are those, which reduce the distance to the target and bad ones are all the others.
 
-\begin{figure}
-	\centering
-	\input{FIG/good_and_bad_directions.svg}
-  	\caption{good and bad directions}
-	\label{fig:good_and_bad_directions}
-\end{figure}
+%\begin{figure}
+%	\centering
+%	\input{FIG/good_and_bad_directions.svg}
+%  	\caption{good and bad directions}
+%	\label{fig:good_and_bad_directions}
+%\end{figure}
+PICTURE MISSING GOOD AND BAD DIRECTIONS
 
 Additionally it makes no sense to go back the same direction where the last step came from. Also the same direction like the last step is not senseful. Because if this would be a good decision, the last step could have gone further. So these two directions are removed from the good directions. After this selection the router can make one step further in every good directon, as far as possible. This means, that the next step can go as far, as no obstacle is on the way or the target (in this coordinate) is reached [\ref{fig:router_go_as_far_as_possible}].
 
-\begin{figure}
-	\centering
-	\input{FIG/router_go_as_far_as_possible.svg}
-  	\caption{one step into a good direction can go as far as possible}
-	\label{fig:router_go_as_far_as_possible}
-\end{figure}
+%\begin{figure}
+%	\centering
+%	\input{FIG/router_go_as_far_as_possible.svg}
+%  	\caption{one step into a good direction can go as far as possible}
+%	\label{fig:router_go_as_far_as_possible}
+%\end{figure}
+PICTURE MISSING ROUTER GO AS FAR AS POSSIBLE
 
 During the calculation of the steps towards the target we count those, which are feasible. If none of them is feasible the algorithm will have to select one of the bad directions for the next step. A major premission for this is also, that our last step ended at an obstacle. The router now can go as far as necessary into this bad direction [\ref{fig:router_go_as_far_as_necessary}].
 
-\begin{figure}
-	\centering
-	\input{FIG/router_go_as_far_as_necessary.svg}
-  	\caption{one step into a bad direction should go only as far as necessary}
-	\label{fig:router_go_as_far_as_necessary}
-\end{figure}
+%\begin{figure}
+%	\centering
+%	\input{FIG/router_go_as_far_as_necessary.svg}
+% 	\caption{one step into a bad direction should go only as far as necessary}
+%	\label{fig:router_go_as_far_as_necessary}
+%\end{figure}
+PICTURE MISSING ROUTER GO AS FAR AS NECESSARY
 
 Last but no least it is also possible to switch to the neighboured layers.
 
