@@ -1,7 +1,7 @@
 \chapter{Definitions}
 
 \section{Module}
-On module in the terminology of Plantage is just a rectangular shape. From that point of view every circuit element can be viewed as module, transistors, capacitors, and son on. It can contain pins, but for the placement only the width and height are important. The actual dimensions are stored the variant for the module. Every module can have various different variants, for example with the same electrical behaviour, but different numbers of gates.
+On module in the terminology of Plantage is just a rectangular shape. From that point of view every circuit element can be viewed as module, transistors, capacitors, and son on. It can contain pins, but for the placement only the width and height are important. The actual dimensions are stored the variant for the module. Every module can have various different variants, for example with the same electrical behaviour, but different numbers of gates [\ref{fig:modules_with_different_gate_number}].
 
 \begin{figure}
 	\centering
@@ -13,9 +13,21 @@ On module in the terminology of Plantage is just a rectangular shape. From that 
 Also a module typically has some pins, which are named themselves and have a net name, which they belong to. One pin can have some contact areas, but must have at least one. Every contact area is only a rectangular shape, which has a height and width and is positioned relative to the module position.
 
 \section{Group}
-In Plantage there are two different types of groups. One type contains only groups and the other one only modules. At the moment it is not supported to mix modules and groups in one group. This is important, because slightly different algorithms must be applied for every type of group.
+In Plantage there are two different types of groups. One type contains only groups [\ref{fig:group_of_groups}] and the other one only modules [\ref{fig:group_of_modules}]. At the moment it is not supported to mix modules and groups in one group. This is important, because slightly different algorithms must be applied for every type of group.
 
-PICTURE MISSING GROUP
+\begin{figure}
+	\centering
+	\input{FIG/group_of_modules.svg}
+	\caption{group of single modules}
+	\label{fig:group_of_modules}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\input{FIG/group_of_groups.svg}
+	\caption{group of two groups}
+	\label{fig:group_of_groups}
+\end{figure}
 
 \section{Shapefunction}
 A shape function is basically a list of possible layouts for a given circuit. This list is called shapefunction, because the minimum possible area for these placements is a hyperbolic function and the placements are located near to this so called pareto front.
