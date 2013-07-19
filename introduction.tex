@@ -1,0 +1,13 @@
+\chapter{Introduction}
+
+\section{Motivation}
+At the moment a lot of new chips are designed and manufactured, every day. A lot of them are mainly digital, as our modern world becomes more and more digital. But some parts of even those digital chips are still analog, if we want it or not. The problem is, that the souroudings of a chip will allways be analog, so at least some circuit elements must be viewed as analog. But the analog world still lacks the tools to fully automize the steps from an idea to the actual layout of a chip for manufacturing. There are some tools for placing, and there are some implementations for routing algorithms available. But during the last few years a completeley new approach for the placement was developed and now it is time to implement the next step towards a fully automized analog layout tool into this software: routing.
+
+The actually last missing step will be the integration of the already developed automatic circuit analysis. This tool could generate automatically the constraints from the schematic and therefore increase the degree of automization. For sure the user will still have to modify these suggested constraints, but the main work should be already done by the tool.
+
+As we already have a fast and reliable placer, called plantage, I have implemented the routing into this tool. The main results of this thesis are:
+\begin{itemize}
+\item As we aren't sure which one will fit best to the unusual hierarchical placer it is easy to replace the router with a different implementation.
+\item I have implemented one line expansion router, which at least creates design rule clean routes.
+\item Based on the previous router I have implemented an extension of the line expansion router, which also considers symmetries and tries to reduce the parasitics.
+\end{itemize}

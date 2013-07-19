@@ -1,0 +1,62 @@
+\documentclass[bsc,oneside]{eda_thesis}
+
+% Class options:
+%  msc  : Master thesis
+%  da   : Diplomarbeit
+%  bsc  : Bachelor thesis
+%  stua : Studienarbeit
+%  ingp : Ingenieurpraxis
+%  ints : Internship report
+%  outertitle : second title page for cover
+%  oneside, twoside : as usual
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[breaklinks,pdfborder={0 0 0}]{hyperref}
+\usepackage[abbr]{harvard}
+\renewcommand{\harvardurl}[1]{\url{#1}} % fix bug in harvard package
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{fixltx2e}
+
+\usepackage{blindtext}
+
+% set options for KOMA script
+%  type setting correction for binding = 5mm
+\KOMAoptions{BCOR=5mm}
+
+\begin{document}
+\authors{Benedikt Schmidt}
+\title{Implementation of Routing in Plantage}
+\issueDate{01}{01}{2099}
+\submissionDate{31}{06}{2099}
+\supervisor{M.Sc. Pang-Yen Chou}{PD Dr.-Ing. Helmut Gräb}
+\address{
+    Mitterweg 63 \newline
+    6020 Innsbruck \newline
+    Austria
+}
+
+\maketitle
+
+\input{abstract}
+
+\tableofcontents
+
+\include{motivation}
+\include{definitions}
+\include{placement}
+\include{routing}
+\include{results}
+
+\listoffigures
+\listoftables
+\bibliographystyle{tumbib}
+\bibliography{thesis,custom}
+
+\end{document}

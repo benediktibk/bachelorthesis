@@ -1,0 +1,82 @@
+\chapter{Definitions}
+
+\section{Module}
+On module in the terminology of Plantage is just a rectangular shape. From that point of view every circuit element can be viewed as module, transistors, capacitors, and son on. It can contain pins, but for the placement only the width and height are important. The actual dimensions are stored the variant for the module. Every module can have various different variants, for example with the same electrical behaviour, but different numbers of gates.
+
+PICTURE MISSING MODULE WITH DIFFERENT NUMBER OF GATES
+
+Also a module typically has some pins, which are named themselves and have a net name, which they belong to. One pin can have some contact areas, but must have at least one. Every contact area is only a rectangular shape, which has a height and width and is positioned relative to the module position.
+
+\section{Group}
+In Plantage there are two different types of groups. One type contains only groups and the other one only modules. At the moment it is not supported to mix modules and groups in one group. This is important, because slightly different algorithms must be applied for every type of group.
+
+PICTURE MISSING GROUP
+
+\section{Shapefunction}
+A shape function is basically a list of possible layouts for a given circuit. This list is called shapefunction, because the minimum possible area for these placements is a hyperbolic function and the placements are located near to this so called pareto front.
+
+PICTURE MISSING SHAPEFUNCTION
+
+\subsection{Shape}
+A shape is the layout for a certain couple of modules. On the one hand it is used for the layout of the whole circuit, but on the other hand also for the layout of only circuit parts.
+
+\section{Constraints}
+In the design of analog circuits a bunch of constraints have to be met. The mainly consider, that certain elements of the circuit should have as similar electrical characteristics as possible. The most prominent example for such a pair of modules are the parts of a differential pair. Differences in these transistors result in a bigger offset of the resulting amplifier, which should be as low as possible.
+\subsection{Symmetry Constraint}
+Symmetry constraints define a vertical or horizontal symmetry axis for modules. They can contain two different types: Single modules and pair modules. Single modules are placed self symmetric to the axis, pair modules are symmetric pairwise.
+
+PICTURE MISSING SYMMETRY CONSTRAINT
+
+\subsection{Alignment Constraint}
+An alignment constraints defines relative positions between modules, vertical or horizontal.
+
+PICTURE MISSING ALIGNMENT CONSTRAINT
+
+\subsection{Group Symmetry Constraint}
+The group symmetry constraint is nearly the same like the symmetry constraint. The only difference is, that it can be applied to groups instead of modules. Again we can have single groups, which are self symmetric placed, or pair groups, which are pairwise symmetric to the symmetry axis.
+
+PICTURE MISSING GROUP SYMMETRY CONSTRAINT
+
+\subsection{Group Alignment Constraint}
+Again the group alignment constraint is nearly the same like the alignment constraint with the only difference, that it can be applied to groups.
+
+PICTURE MISSING GROUP ALIGNMENT CONSTRAINT
+
+\subsection{Same Variants Constraint}
+The same variants constraint is again very important to for example given differential pairs. To get as far as possible same characterisitics in one placement these modules should have the same variants. They can still have various different variants, but in one certain placement for these modules the same variant is selected.
+
+PICTURE MISSING SAME VARIANTS CONSTRAINT
+
+\section{Technology Rules}
+Typically the manufacturer of the chip provides a so called \textit{tech-file} for the circuit designer, which he can use to create the layout. This information includes for example the minimum distances between two modules. As the knowledge of the manufacturers is very important to them the technology-files are kept secret, and therefore no real standard for them exists. The following descriptions are based on a technology file from Austria Microsystems, which was available for this project. We assume, that other possible formats can be transformed through the ICFBInterface into something similar. The rules were already extract through a skill script from cadence, but they were not stored or looped through to plantage. The technology rules can have four different types:
+
+\begin{itemize}
+\item minimum width
+\item minimum spacing
+\item minimum notch
+\item minimum enclosure
+\end{itemize}
+
+The first two rules, considering minimum width and spaces, have one value, the actual minimum width or distance, and the layer, which they should be applied on. The last two types have also a value, but additionally two layers, on which they must be considered. But let us first get to know the other two types.
+
+PICTURE MISSING MINIMUM SPACING
+
+The minimum spacing rule is quite easy to understand, it only describes a minimal distance between two shapes on a certain layer. These rules may not be considered if deep trench isolated transistors are concerned, but this doesn't affect the routing. Deep trench isolated transistors result only in a possible bigger, combined, forbidden area.
+
+PICTURE MISSING MINIMUM WIDTH
+
+Minimum widths are very central technology rules for the routing. These values are used as width for the routes and can be different for every layer.
+
+PICTURE MISSING MINIMUM NOTCH
+
+DESCRIPTION MISSING MINIMUM NOTCH
+
+PICTURE MISSING MINIMUM ENCLOSURE
+
+The minimum enclosure rules describe minimum distances, which need to be met between shapes on different layers. Typically in a technology file we only have minimum enclosure rules, where one of the considered layers is a via layer. A via layer is during manufacturing an additional layer, in which the connections between the different layers are created. For the routing these rules result in the dimensions of the vias on the layers, which are connected.
+
+PICTURE MISSING VIA DIMENSIONS
+
+Every via definition must have two minimum enclosure rules, one for every layer, which is connected through the via. Additionally we need on minimum width rule for the via layer, which describes the width of the acutal connection. From these three rules we then can calculate the dimensions of the via, which typically differ for the two layers.
+
+\[\text{via dimension} = 2 \cdot \text{minimun enclosure} + \text{minimum via width}\]

@@ -1,0 +1,78 @@
+#!/usr/bin/python
+import sys, getopt
+import glob, os
+import urllib
+
+browser = "firefox"
+
+
+def parse_aux(filename):
+    fhandle = open(filename)
+    content = fhandle.readlines()
+    keys = set()
+    fhandle.close()
+    for c in content:
+        if c.strip().startswith("\citation"):
+            keys.add(c.strip()[9:].strip(" {}"))
+        if c.strip().startswith("\@input"):
+            keys.update(parse_aux(c.split("{")[1].split("}")[0]))
+    return keys
+
+usage = 'Usage: edabibtex target\n'
+usage += 'Options:\n  -h, --help : show this help \n'
+usage += '  -v, --version : Show version\n'
+usage += '  -V, --verbose : Print sent and received information\n'
+usage += '  -c, --check :   Display webpage with overview informations\n'
+
+options, args = getopt.getopt(sys.argv[1:],
+                            ':hvVc', ['help','version','verbose','check'])
+verbose = 0
+check = 0
+
+for option, value in options:
+    if option in ('-h','--help'):
+        print usage; sys.exit(0)
+    if option in ('-v','--version'):
+        print __version__; sys.exit(0)
+    if option in ('-V','--verbose'):
+        verbose = 1
+    if option in ('-c','--check'):
+        check = 1
+
+if len(args)==0:
+    print usage
+    sys.exit(0)
+
+if "." in args[0]:
+    if args[0].endswith(".aux"):
+        args[0] = args[0][:-4]
+    filename = ".".join(args[0].split(".")+["aux"])
+else:
+    filename = ".".join([args[0],"aux"])
+
+bibkeys = set()
+
+bibkeys.update(parse_aux(filename))
+
+if len(bibkeys)>0:
+    arguments = reduce(lambda x,y:x+","+y,list(bibkeys))
+    #   08.02.2010: crk
+    #   not nice but remove doublicated citations with are in one big cite
+    arguments = set(arguments.split(','))
+    if check == 0:
+        bibpage = "https://edawww.regent.e-technik.tu-muenchen.de/bibtex/edabibtex.psp?ID=[%s]" %(','.join(arguments))
+        try:
+            response = urllib.urlopen(bibpage)
+        except IOError:
+            raise IOError, "Could not open connection to net adress " + str(bibpage)
+        else:
+            try:
+                file = open(filename[:-4]+".bib","w")
+            except IOError:
+                raise IOError, "Could not open output file "+filename[:-4]+".bib"
+            file.write(response.read())
+            file.close
+    else:
+        bibpage = "https://edawww.regent.e-technik.tu-muenchen.de/bibtex/edabibtex_display.psp?ID=[%s]" %(','.join(arguments))
+        os.system(browser+" "+bibpage)
+

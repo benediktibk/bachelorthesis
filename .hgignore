@@ -1,0 +1,11 @@
+syntax: glob
+*~
+*.pdf
+*.log
+*.aux
+*.kate-swp
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.out
