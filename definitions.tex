@@ -3,7 +3,12 @@
 \section{Module}
 On module in the terminology of Plantage is just a rectangular shape. From that point of view every circuit element can be viewed as module, transistors, capacitors, and son on. It can contain pins, but for the placement only the width and height are important. The actual dimensions are stored the variant for the module. Every module can have various different variants, for example with the same electrical behaviour, but different numbers of gates.
 
-PICTURE MISSING MODULE WITH DIFFERENT NUMBER OF GATES
+\begin{figure}
+	\centering
+	\input{FIG/modules_with_different_gate_number.svg}
+	\caption{the same MOSFET with two different numbers of gates}
+	\label{fig:modules_with_different_gate_number}
+\end{figure}
 
 Also a module typically has some pins, which are named themselves and have a net name, which they belong to. One pin can have some contact areas, but must have at least one. Every contact area is only a rectangular shape, which has a height and width and is positioned relative to the module position.
 
