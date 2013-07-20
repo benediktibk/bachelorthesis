@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -140,26 +140,26 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="70"
-       y="1022.3622"
+       x="40"
+       y="1046.3622"
        id="text3177"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3179"
-         x="70"
-         y="1022.3622"
+         x="40"
+         y="1046.3622"
          style="font-size:12px">Gate</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="30"
-       y="882.36218"
+       x="4"
+       y="1016.3622"
        id="text3177-5"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3179-4"
-         x="30"
-         y="882.36218"
+         x="4"
+         y="1016.3622"
          style="font-size:12px">Drain</tspan></text>
     <text
        xml:space="preserve"
@@ -241,26 +241,26 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="280"
-       y="1022.3622"
+       x="250"
+       y="1046.3622"
        id="text3177-51"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3179-7"
-         x="280"
-         y="1022.3622"
+         x="250"
+         y="1046.3622"
          style="font-size:12px">Gate</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="240"
-       y="882.36218"
+       x="424"
+       y="872.36218"
        id="text3177-5-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3179-4-5"
-         x="240"
-         y="882.36218"
+         x="424"
+         y="872.36218"
          style="font-size:12px">Drain</tspan></text>
     <rect
        style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
