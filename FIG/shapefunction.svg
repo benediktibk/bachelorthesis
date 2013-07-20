@@ -1,0 +1,1734 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="181.95"
+   height="115"
+   version="1.2"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="shapefunction.svg"
+   inkscape:export-filename="/home/benediktibk/Entwicklung/thesis/FIG/shapefunction.png"
+   inkscape:export-xdpi="247.30435"
+   inkscape:export-ydpi="247.30435">
+  <metadata
+     id="metadata482">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Qt Svg Document</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
+     id="namedview480"
+     showgrid="false"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:zoom="1.532743"
+     inkscape:cx="146.75003"
+     inkscape:cy="44.499977"
+     inkscape:window-x="-3"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <title
+     id="title4">Qt Svg Document</title>
+  <desc
+     id="desc6">Generated with Qt</desc>
+  <defs
+     id="defs8" />
+  <g
+     id="g10"
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+     transform="translate(5.5,5.5)">
+    <g
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g12"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g14"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g16"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#8fb7da;fill-opacity:1;stroke:none;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 82.55,-101 1,1.2089 1,1.1802 1,1.1527 1,1.126 1,1.1003 1,1.0755 1,1.0514 1,1.0282 1,1.0058 1,0.984 1,0.963 1,0.9426 1,0.9229 1,0.9038 1,0.8852 1,0.8673 1,0.8498 1,0.833 1,0.8165 1,0.8006 1,0.7852 1,0.7701 1,0.7555 1,0.7414 1,0.7276 1,0.7141 1,0.7011 1,0.6885 1,0.6761 1,0.6641 1,0.6524 1,0.641 1,0.6299 1,0.619 1,0.6086 1,0.5983 1,0.5883 1,0.5785 1,0.569 1,0.5597 1,0.5507 1,0.5418 1,0.5332 1,0.5248 1,0.5165 1,0.5085 1,0.5006 1,0.493 1,0.4855 1,0.4781 1,0.471 1,0.464 1,0.4572 1,0.4504 1,0.4439 1,0.4375 1,0.4312 1,0.4251 1,0.4191 1,0.4132 1,0.4074 1,0.4019 1,0.3962 1,0.3909 1,0.3856 1,0.3804 1,0.3753 1,0.3703 1,0.3654 1,0.3607 1,0.3559 1,0.3513 1,0.3468 1,0.3424 1,0.3381 1,0.3337 1,0.3296 1,0.3255 1,0.3215 1,0.3175 1,0.3136 1,0.3098 1,0.3061 1,0.3024 1,0.2987 0.4,-51.2384 -85.4,0"
+         id="path18"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g20"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#8fb7da;fill-opacity:1;stroke:#e36e21;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="82.55,-101 83.55,-99.7911 84.55,-98.6109 85.55,-97.4582 86.55,-96.3322 87.55,-95.2319 88.55,-94.1564 89.55,-93.105 90.55,-92.0768 91.55,-91.071 92.55,-90.087 93.55,-89.124 94.55,-88.1814 95.55,-87.2585 96.55,-86.3547 97.55,-85.4695 98.55,-84.6022 99.55,-83.7524 100.55,-82.9194 101.55,-82.1029 102.55,-81.3023 103.55,-80.5171 104.55,-79.747 105.55,-78.9915 106.55,-78.2501 107.55,-77.5225 108.55,-76.8084 109.55,-76.1073 110.55,-75.4188 111.55,-74.7427 112.55,-74.0786 113.55,-73.4262 114.55,-72.7852 115.55,-72.1553 116.55,-71.5363 117.55,-70.9277 118.55,-70.3294 119.55,-69.7411 120.55,-69.1626 121.55,-68.5936 122.55,-68.0339 123.55,-67.4832 124.55,-66.9414 125.55,-66.4082 126.55,-65.8834 127.55,-65.3669 128.55,-64.8584 129.55,-64.3578 130.55,-63.8648 131.55,-63.3793 132.55,-62.9012 133.55,-62.4302 134.55,-61.9662 135.55,-61.509 136.55,-61.0586 137.55,-60.6147 138.55,-60.1772 139.55,-59.746 140.55,-59.3209 141.55,-58.9018 142.55,-58.4886 143.55,-58.0812 144.55,-57.6793 145.55,-57.2831 146.55,-56.8922 147.55,-56.5066 148.55,-56.1262 149.55,-55.7509 150.55,-55.3806 151.55,-55.0152 152.55,-54.6545 153.55,-54.2986 154.55,-53.9473 155.55,-53.6005 156.55,-53.2581 157.55,-52.92 158.55,-52.5863 159.55,-52.2567 160.55,-51.9312 161.55,-51.6097 162.55,-51.2922 163.55,-50.9786 164.55,-50.6688 165.55,-50.3627 166.55,-50.0603 167.55,-49.7616 "
+         id="polyline22"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g24"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g26"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g28"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 82.55,-104 0,3 3,0 -3,-3"
+         id="path30"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g32"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g34"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g36"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 108.05,-91.9 0,3 3,0 -3,-3"
+         id="path38"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g40"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g42"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g44"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 108.05,-91.9 0,3 3,0 -3,-3"
+         id="path46"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g48"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g50"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g52"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 116.95,-103.1 0,3 3,0 -3,-3"
+         id="path54"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g56"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g58"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g60"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 116.95,-103.1 0,3 3,0 -3,-3"
+         id="path62"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g64"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g66"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g68"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 116.95,-103.1 0,3 3,0 -3,-3"
+         id="path70"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g72"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g74"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g76"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 116.95,-103.1 0,3 3,0 -3,-3"
+         id="path78"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g80"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g82"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g84"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 116.95,-103.1 0,3 3,0 -3,-3"
+         id="path86"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g88"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g90"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g92"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 116.95,-103.1 0,3 3,0 -3,-3"
+         id="path94"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g96"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g98"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g100"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#e36e21;fill-opacity:1;stroke:#a4ad00;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 127.95,-71.7 0,3 3,0 -3,-3"
+         id="path102"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g104"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g106"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g108"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 0,-33.3 7.4,0 0,5.1 -7.4,0 0,-5.1"
+         id="path110"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="1.8315"
+       font-weight="400"
+       font-style="normal"
+       id="g112"
+       style="font-size:1.83150005px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Helvetica">
+      <text
+         xml:space="preserve"
+         x="1.57812"
+         y="-30.2969"
+         font-size="1.8315"
+         font-weight="400"
+         font-style="normal"
+         id="text114"
+         style="font-size:1.83150005px;font-style:normal;font-weight:400;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica">|MP2</text>
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g116"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g118"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g120"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 0,-68.7 9.75,0 0,9.1 -9.75,0 0,-9.1"
+         id="path122"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="1.5082"
+       font-weight="400"
+       font-style="normal"
+       id="g124"
+       style="font-size:1.50820005px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Helvetica">
+      <text
+         xml:space="preserve"
+         x="2.21875"
+         y="-63.6875"
+         font-size="1.5082"
+         font-weight="400"
+         font-style="normal"
+         id="text126"
+         style="font-size:1.50820005px;font-style:normal;font-weight:400;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica">|MP3(1)</text>
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g128"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g130"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g132"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 12.75,-68.7 9.75,0 0,9.1 -9.75,0 0,-9.1"
+         id="path134"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="1.5082"
+       font-weight="400"
+       font-style="normal"
+       id="g136"
+       style="font-size:1.50820005px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Helvetica">
+      <text
+         xml:space="preserve"
+         x="14.9688"
+         y="-63.6875"
+         font-size="1.5082"
+         font-weight="400"
+         font-style="normal"
+         id="text138"
+         style="font-size:1.50820005px;font-style:normal;font-weight:400;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica">|MP4(1)</text>
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g140"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g142"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g144"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 0,-56.6 9.75,0 0,9.1 -9.75,0 0,-9.1"
+         id="path146"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="1.5082"
+       font-weight="400"
+       font-style="normal"
+       id="g148"
+       style="font-size:1.50820005px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Helvetica">
+      <text
+         xml:space="preserve"
+         x="2.21875"
+         y="-51.5938"
+         font-size="1.5082"
+         font-weight="400"
+         font-style="normal"
+         id="text150"
+         style="font-size:1.50820005px;font-style:normal;font-weight:400;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica">|MP4(2)</text>
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g152"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g154"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g156"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 12.75,-56.6 9.75,0 0,9.1 -9.75,0 0,-9.1"
+         id="path158"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="1.5082"
+       font-weight="400"
+       font-style="normal"
+       id="g160"
+       style="font-size:1.50820005px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Helvetica">
+      <text
+         xml:space="preserve"
+         x="14.9688"
+         y="-51.5938"
+         font-size="1.5082"
+         font-weight="400"
+         font-style="normal"
+         id="text162"
+         style="font-size:1.50820005px;font-style:normal;font-weight:400;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica">|MP3(2)</text>
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g164"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g166"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g168"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#ca203f;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 1.2,-44.5 11.4,0 0,7.2 -11.4,0 0,-7.2"
+         id="path170"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="2.76392"
+       font-weight="400"
+       font-style="normal"
+       id="g172"
+       style="font-size:2.76392007px;font-style:normal;font-weight:400;fill:#ca203f;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Helvetica">
+      <text
+         xml:space="preserve"
+         x="3.625"
+         y="-39.5"
+         font-size="2.76392"
+         font-weight="400"
+         font-style="normal"
+         id="text174"
+         style="font-size:2.76392007px;font-style:normal;font-weight:400;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica">|MN1</text>
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g176"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g178"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g180"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#ca203f;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 15.6,-44.5 11.4,0 0,7.2 -11.4,0 0,-7.2"
+         id="path182"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="2.76392"
+       font-weight="400"
+       font-style="normal"
+       id="g184"
+       style="font-size:2.76392007px;font-style:normal;font-weight:400;fill:#ca203f;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Helvetica">
+      <text
+         xml:space="preserve"
+         x="18.0312"
+         y="-39.5"
+         font-size="2.76392"
+         font-weight="400"
+         font-style="normal"
+         id="text186"
+         style="font-size:2.76392007px;font-style:normal;font-weight:400;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica">|MN0</text>
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g188"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g190"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g192"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 10.4,-34.3 7.4,0 0,7.1 -7.4,0 0,-7.1"
+         id="path194"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="1.89819"
+       font-weight="400"
+       font-style="normal"
+       id="g196"
+       style="font-size:1.89819002px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Helvetica">
+      <text
+         xml:space="preserve"
+         x="11.9062"
+         y="-30.2969"
+         font-size="1.89819"
+         font-weight="400"
+         font-style="normal"
+         id="text198"
+         style="font-size:1.89819002px;font-style:normal;font-weight:400;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica">|MP0</text>
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g200"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g202"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g204"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 30,-37.3 12.4,0 0,13.1 -12.4,0 0,-13.1"
+         id="path206"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="3.10912"
+       font-weight="400"
+       font-style="normal"
+       id="g208"
+       style="font-size:3.10911989px;font-style:normal;font-weight:400;fill:#41beff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Helvetica">
+      <text
+         xml:space="preserve"
+         x="32.609402"
+         y="-29.2969"
+         font-size="3.10912"
+         font-weight="400"
+         font-style="normal"
+         id="text210"
+         style="font-size:3.10911989px;font-style:normal;font-weight:400;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica">|MP1</text>
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g212"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g214"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g216"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#ca203f;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 0,-21.2 31.4,0 L 31.4,0 0,0 0,-21.2"
+         id="path218"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="7.40143"
+       font-weight="400"
+       font-style="normal"
+       id="g220"
+       style="font-size:7.40143013px;font-style:normal;font-weight:400;fill:#ca203f;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Helvetica">
+      <text
+         xml:space="preserve"
+         x="6.9218798"
+         y="-8.1875"
+         font-size="7.40143"
+         font-weight="400"
+         font-style="normal"
+         id="text222"
+         style="font-size:7.40143013px;font-style:normal;font-weight:400;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica">|MN4</text>
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g224"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g226"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g228"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#92ac6b;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 45.4,-64.7 82.55,0 0,64.7 -82.55,0 0,-64.7"
+         id="path230"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="28.8515"
+       font-weight="400"
+       font-style="normal"
+       id="g232"
+       style="font-size:28.85149956px;font-style:normal;font-weight:400;fill:#92ac6b;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Helvetica">
+      <text
+         xml:space="preserve"
+         x="64.5"
+         y="-22.6875"
+         font-size="28.8515"
+         font-weight="400"
+         font-style="normal"
+         id="text234"
+         style="font-size:28.85149956px;font-style:normal;font-weight:400;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica">|C0</text>
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g236"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g238"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g240"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 133.55,-67.7 0,3 3,0 -3,-3"
+         id="path242"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g244"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g246"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g248"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 133.55,-67.7 0,3 3,0 -3,-3"
+         id="path250"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g252"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g254"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g256"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 133.55,-67.7 0,3 3,0 -3,-3"
+         id="path258"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g260"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g262"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g264"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 133.55,-67.7 0,3 3,0 -3,-3"
+         id="path266"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g268"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g270"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g272"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 133.55,-67.7 0,3 3,0 -3,-3"
+         id="path274"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g276"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g278"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g280"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 133.55,-67.7 0,3 3,0 -3,-3"
+         id="path282"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g284"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g286"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g288"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 133.55,-91.9 0,3 3,0 -3,-3"
+         id="path290"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g292"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g294"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g296"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 133.55,-91.9 0,3 3,0 -3,-3"
+         id="path298"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g300"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g302"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g304"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 161.15,-79.8 0,3 3,0 -3,-3"
+         id="path306"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g308"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g310"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g312"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 161.15,-79.8 0,3 3,0 -3,-3"
+         id="path314"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g316"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g318"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g320"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 162.35,-67.7 0,3 3,0 -3,-3"
+         id="path322"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g324"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g326"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g328"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 162.35,-67.7 0,3 3,0 -3,-3"
+         id="path330"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g332"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g334"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g336"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 162.35,-67.7 0,3 3,0 -3,-3"
+         id="path338"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g340"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g342"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g344"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 162.35,-67.7 0,3 3,0 -3,-3"
+         id="path346"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g348"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g350"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g352"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-67.7 0,3 3,0 -3,-3"
+         id="path354"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g356"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g358"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g360"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-67.7 0,3 3,0 -3,-3"
+         id="path362"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g364"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g366"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g368"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-67.7 0,3 3,0 -3,-3"
+         id="path370"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g372"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g374"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g376"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-67.7 0,3 3,0 -3,-3"
+         id="path378"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g380"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g382"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g384"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-67.7 0,3 3,0 -3,-3"
+         id="path386"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g388"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g390"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g392"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-67.7 0,3 3,0 -3,-3"
+         id="path394"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g396"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g398"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g400"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-67.7 0,3 3,0 -3,-3"
+         id="path402"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g404"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g406"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g408"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-67.7 0,3 3,0 -3,-3"
+         id="path410"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g412"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g414"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g416"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-79.8 0,3 3,0 -3,-3"
+         id="path418"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g420"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g422"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g424"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-79.8 0,3 3,0 -3,-3"
+         id="path426"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g428"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g430"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g432"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-79.8 0,3 3,0 -3,-3"
+         id="path434"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g436"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g438"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g440"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-79.8 0,3 3,0 -3,-3"
+         id="path442"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g444"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g446"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g448"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-80.8 0,3 3,0 -3,-3"
+         id="path450"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g452"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g454"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g456"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-80.8 0,3 3,0 -3,-3"
+         id="path458"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g460"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g462"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g464"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-80.8 0,3 3,0 -3,-3"
+         id="path466"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g468"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g470"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g472"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 167.95,-80.8 0,3 3,0 -3,-3"
+         id="path474"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(0,104)"
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g476"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+    <g
+       font-size="11"
+       font-weight="400"
+       font-style="normal"
+       id="g478"
+       style="font-size:11px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Ubuntu" />
+  </g>
+</svg>
