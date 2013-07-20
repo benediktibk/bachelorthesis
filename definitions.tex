@@ -13,20 +13,13 @@ On module in the terminology of Plantage is just a rectangular shape. From that 
 Also a module typically has some pins, which are named themselves and have a net name, which they belong to. One pin can have some contact areas, but must have at least one. Every contact area is only a rectangular shape, which has a height and width and is positioned relative to the module position.
 
 \section{Group}
-In Plantage there are two different types of groups. One type contains only groups [\ref{fig:group_of_groups}] and the other one only modules [\ref{fig:group_of_modules}]. At the moment it is not supported to mix modules and groups in one group. This is important, because slightly different algorithms must be applied for every type of group.
+In Plantage there are two different types of groups. One type contains only groups and the other one only modules [\ref{fig:group_of_modules}]. At the moment it is not supported to mix modules and groups in one group. This is important, because slightly different algorithms must be applied for every type of group.
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.5]{FIG/group_of_modules.png}
-	\caption{group of single modules}
-	\label{fig:group_of_modules}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.5]{FIG/group_of_groups.png}
-	\caption{group of two groups}
-	\label{fig:group_of_groups}
+	\subfloat[group of single modules]{\includegraphics[scale=0.5]{FIG/group_of_modules.png}}
+	\subfloat[group of two groups]{\includegraphics[scale=0.5]{FIG/group_of_groups.png}}
+	\caption{groups arrange modules and groups together}
 \end{figure}
 
 \section{Shapefunction}
