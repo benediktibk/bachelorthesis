@@ -51,6 +51,8 @@ MISSING
 During this thesis two different routing algorithms were implemented: First of all a typical line expansion router. This solutions doesn't consider all constraints, but it is able to create at least reasonable results. Afterwards this algorithm was extended to consider additional constraints.
 
 \subsection{Line Expansion Router}
+
+\subsubsection{Selection of Target}
 The first thing which the algorithm has to do, before it can calculate a route, is to selected the start and target contact area. There can be several possibilities, as every pin can have several contact areas. Later on we will even see that already created routes can be candidates to start or end with a route. Basically this task can be seen as the selection of the closest rectangles of two lists of possibilities. For this I first want to talk a little bit about how the closest distance between two rectangles can be calculated.
 
 For two rectangles there are several possible constellations. The first one we usually check is, if the overlap. If this is the case we can calculated easily the rectangle which is covered by both \nref{fig:rectangles_overlapping}. The distance is 0 in this case, and as start points for both rectangles we can select the center of gravity of the overlapping area.
@@ -71,6 +73,7 @@ If the two rectangles do not overlap it becomes a little bit more difficult. In 
 	\label{fig:rectangles_closest_corner}
 \end{figure}
 
+\subsubsection{Consider Obstacles}
 After the algorithm has selected start and target contact areas the next step is to avoid routes across modules. For this purpose during all the following steps the modules are considered as obstacles. But during the first step usually the route has first to get out of the module. To avoid additional, accidentally added, gates the algorithm has to choose the shortest way to get out of the module. To decrease the resistance it is also possible to start right at the contact area to the next layer and use for example metal to get out of the module as fast as possible.
 
 As the algorithm now has all the necessary information the actual line expansion routing can start. The main idea behind a line expansion router is that the routes are created sequentially. Every single step is based on a map of obstacles, which the route mustn't cross. From the starting point beginning always the next possible point of a route is calculated and the algorithm afterwards again applied to this partial problem. At the beginning of this recursive algorithm, as usual, the terminating condition is checked: If we have reached the target point. In every single step there are several decisions to be made: First the possible directions are grouped in good and bad directions \nref{fig:router_good_bad_direction}. Good directions are those, which reduce the distance to the target and bad ones are all the others.
@@ -102,11 +105,19 @@ During the calculation of the steps towards the target we count those, which are
 	\label{fig:router_as_far_as_necessary}
 \end{figure}
 
-Last but no least it is also possible to switch to the neighboured layers.
+Last but no least it is also possible to switch to the neighboured layers. For modules the obstacle can not be crossed with this way, as they are obstacles at every layer. But if for example the obstacle is just another route a layer switch may solve the problem.
 
-Finally, if the start point is the same as the end point the algorithm has calculated a feasible and complete route. This result is added to all the possible routes for this necessary connection. From these possible routes the first, quite simple, algorithm chooses only the best one. As this algorithm calculates the routes sequentially it has no information about for example symmetries or other parasitics, therefore the \textit{best} possibility is chosen on the lowest resistance.
+\subsubsection{Avoid Collisions}
+To avoid collisions I take in account the preferred directions for every layer. This information is again stored in the technology file and describes, if a layer should be used for horziontal or vertical routes. This reduces the possibility of collisions very efficiently and results in less complex layouts.
 
-Typically there are several pins on every net, which means the algorithm has to calculate no only one route per net. To reduce the net length all the already calculated and selected routes are added as possible targets for the next routes.
+\subsubsection{Symmetric Routes}
+MISSING
+
+\subsubsection{Guards}
+MISSING
+
+\subsubsection{Selection of the Route}
+Finally, if the start point is the same as the end point the algorithm has calculated a feasible and complete route. This result is added to all the possible routes for this necessary connection. From these possible routes the first, quite simple, algorithm chooses only the best one. As this algorithm calculates the routes sequentially it has no information about for example capacitive couplings, therefore the \textit{best} possibility is chosen on the lowest resistance.
 
 For this first algorithm a lot of different possibilities for every necessary connection is quite a lot of information, as it chooses only the shortest one in terms of resistance. But the results, which we generate here, can be reused for the next, extended, version of the line expansion algorithm.
 
