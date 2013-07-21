@@ -114,7 +114,7 @@ To avoid collisions I take in account the preferred directions for every layer. 
 MISSING
 
 \subsubsection{Guards}
-MISSING
+With guards a designer can protect for example a certain signal from another very noisy one or protect whole module groups. The latter one is for example often used for current mirrors, as they are very sensitive against noise. In physical representation a guard or guard ring is only a layer, for example MET1, contacted to the substrate and connected to a certain Voltage level (often ground). For routing this results only in an additional obstacle on this layer.
 
 \subsubsection{Selection of the Route}
 Finally, if the start point is the same as the end point the algorithm has calculated a feasible and complete route. This result is added to all the possible routes for this necessary connection. From these possible routes the first, quite simple, algorithm chooses only the best one. As this algorithm calculates the routes sequentially it has no information about for example capacitive couplings, therefore the \textit{best} possibility is chosen on the lowest resistance.
