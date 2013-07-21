@@ -1,7 +1,7 @@
 \chapter{Definitions}
 
 \section{Module}
-On module in the terminology of Plantage is just a rectangular shape. From that point of view every circuit element can be viewed as module, transistors, capacitors, and son on. It can contain pins, but for the placement only the width and height are important. The actual dimensions are stored the variant for the module. Every module can have various different variants, for example with the same electrical behaviour, but different numbers of gates \nref{fig:modules_with_different_gate_number}.
+One module in the terminology of Plantage is just a rectangular shape. From that point of view every circuit element can be viewed as module, transistors, capacitors, and so on. For the placement only width and height of the module is important. The actual dimensions are stored in the variant of the module. Every module can have various different variants, for example with the same electrical behaviour, but different numbers of gates \nref{fig:modules_with_different_gate_number}.
 
 \begin{figure}
 	\centering
@@ -69,7 +69,9 @@ Again the group alignment constraint is nearly the same like the alignment const
 The same variants constraint is again very important to for example given differential pairs. To get as far as possible same characterisitics in one placement these modules should have the same variants. They can still have various different variants, but in one certain placement for these modules the same variant is selected.
 
 \section{Technology Rules}
-Typically the manufacturer of the chip provides a so called \textit{tech-file} for the circuit designer, which he can use to create the layout. This information includes for example the minimum distances between two modules. As the knowledge of the manufacturers is very important to them the technology-files are kept secret, and therefore no real standard for them exists. The following descriptions are based on a technology file from Austria Microsystems, which was available for this project. We assume, that other possible formats can be transformed through the ICFBInterface into something similar. The rules were already extract through a skill script from cadence, but they were not stored or looped through to plantage. The technology rules can have four different types:
+Typically the manufacturer of the chip provides a so called \textit{tech-file} for the circuit designer, which he can use to create the layout. This information includes for example the minimum distances between two modules. As the knowledge of the manufacturers is very important to them the technology-files are kept secret, and therefore no real standard for them exists. The following descriptions are based on a technology file from Austria Microsystems (AMS), which was available for this project. I assume, that other possible formats can be transformed through the ICFBInterface into something similar. The rules were already extracted through a skill script from cadence, but they were not stored or looped through to plantage. 
+
+The technology rules can have four different types:
 
 \begin{itemize}
 \item minimum width
@@ -89,7 +91,7 @@ The minimum spacing rule \nref{fig:technology_rule_spacing} is quite easy to und
 	\label{fig:technology_rule_spacing}
 \end{figure}
 
-Minimum widths are very central technology rules for the routing \nref{fig:technology_rule_width}. These values are used as width for the routes and can be different for every layer.
+Minimum widths are very central technology rules for the routing \nref{fig:technology_rule_width}. These values are usually used as width for the routes. Only in special cases, if for example a high current must be transported, the designer may choose a bigger width. The rules can be different for every layer.
 
 \begin{figure}
 	\centering
@@ -100,7 +102,7 @@ Minimum widths are very central technology rules for the routing \nref{fig:techn
 
 The minimum enclosure rules describe minimum distances, which need to be met between shapes on different layers. Typically in a technology file we only have minimum enclosure rules, where one of the considered layers is a via layer. A via layer is during manufacturing an additional layer, in which the connections between the different layers are created. For the routing these rules result in the dimensions of the vias on the layers, which are connected.
 
-For some Via-Definitions, for example in the Hit-Kit of AMS, some enclosure rules are missing, at least in the technology file. For the design rule check these rules are still existing. In these cases I have to assume that there is a certain default value for the minimum enclosure rules: 0.2$\mu$m to the layer below and 0.15$\mu$m to the layer above of a via layer. These values work at least for the technology definition of AMS, but they may differ in the definition of other manucfacturers.
+For some Via-Definitions, for example in the Hit-Kit of AMS, some enclosure rules are missing, at least in the technology file, but for the design rule check these rules are still existing. In these cases I have to assume that there is a certain default value for the minimum enclosure rules: 0.2$\mu$m to the layer below and 0.15$\mu$m to the layer above of a via layer. These values work at least for the technology definition of AMS, but they may differ in the definition of other manucfacturers.
 
 Every via definition must have two minimum enclosure rules, one for every layer, which is connected through the via. Additionally we need one minimum width rule for the via layer, which describes the width of the acutal connection. From these three rules we then can calculate the dimensions of the via, which typically differ for the two layers \nref{fig:technology_rule_via_dimensions}.
 
