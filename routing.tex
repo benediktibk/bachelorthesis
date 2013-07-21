@@ -4,15 +4,14 @@ Even nowadays the routing is often done manually for analogue circuits. This is 
 
 The designer additonally adds guards and rings to the placement to protect certain devices from noise. This noise can come from for example the clock net or other routes, which carry a signal with high frequency. But high frequencies aren't the only disturbing effects, already during the placement the designer has to consider temperature gradients, caused by transistors with a high power consumption. To avoid problems with different temperatures in the substrate of for example the devices of differential pair the can be placed symmetric or can even have a common centroid. Around these grouped modules then the designer can create for example a guard ring around to protect the devices even more. An example for a manually routed layout can be seen in [\ref{fig:miller_amplifier_routed_layout}].
 
-So for an automatic routing algorithm a lot of different constraints have to considered. There are even more obstacles than just the devices and already created routes, for example the routes should pass over guard rings. To solve this problem in the following chapter are two different approaches presented: One simple sequentially line expansion router and one extend version of the previous one, which selects all routes together in one step. But first I have to discuss the changes that were necessary for the implementation of the routing algorithms.
+So for an automatic routing algorithm a lot of different constraints must be considered. There are even more obstacles than just the devices and already created routes, for example the routes should pass over guard rings. To solve this problem in the following chapter are two different approaches presented: One simple sequentially line expansion router and one extend version of the previous one, which selects all routes together in one step. But first I have to discuss the changes that were necessary for the implementation of the routing algorithms.
 
-%\begin{figure}
-%	\centering
-%	\includegraphics[scale=.3]{FIG/miller_amplifier_routed_layout.png}
-%  	\caption{routed layout of a miller amplifier}
-%	\label{fig:miller_amplifier_routed_layout}
-%\end{figure}
-PICTURE MISSING MILLER AMPLIFIER ROUTED LAYOUT
+\begin{figure}
+	\centering
+	\includegraphics[scale=.3]{FIG/miller_amplifier_layout_routed.png}
+  	\caption{routed layout of a miller amplifier}
+	\label{fig:miller_amplifier_routed_layout}
+\end{figure}
 
 \section{Changes for Routing in the existing Applications}
 
@@ -35,8 +34,6 @@ The vias and routes were not considered at all previously. The main information 
 
 Previously every pin consisted only of one rectangle, which is obviously not enough. This basic information was used to minimize the estimated net length for the placements. But for real routing we need more complex possibilities to define pins, as, for example, the gate can be connected from both sides. Also it is not recommend to contact over the diffusion area. This will result in even more complex contact areas, as they could be split up in different parts. The definition of these areas is done by the user in the GUI and handed over to plantage. The used format defines for every pin, which a module has, at least one contact area, but eventually a lot more. During the routing then the acutal contact area is selected based on a certain heuristic.
 
-\subsubsection{Treatment of Groups}
-
 \subsection{ICFBInterface}
 The GUI-part of this application also needed some adaptions. This work was mainly done by Martin Keßler and contained the following parts:
 
@@ -47,6 +44,8 @@ The GUI-part of this application also needed some adaptions. This work was mainl
 \end{itemize}	
 
 \section{Overview of Existing Routing Algorithms}
+
+MISSING
 
 \section{Implemented Routing Algorithms}
 During this thesis two different routing algorithms were implemented: First of all a typical line expansion router. This solutions doesn't consider all constraints, but it is able to create at least reasonable results. Afterwards this algorithm was extended to consider additional constraints.
