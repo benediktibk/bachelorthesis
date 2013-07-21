@@ -1,7 +1,7 @@
 \chapter{Definitions}
 
 \section{Module}
-On module in the terminology of Plantage is just a rectangular shape. From that point of view every circuit element can be viewed as module, transistors, capacitors, and son on. It can contain pins, but for the placement only the width and height are important. The actual dimensions are stored the variant for the module. Every module can have various different variants, for example with the same electrical behaviour, but different numbers of gates [\ref{fig:modules_with_different_gate_number}].
+On module in the terminology of Plantage is just a rectangular shape. From that point of view every circuit element can be viewed as module, transistors, capacitors, and son on. It can contain pins, but for the placement only the width and height are important. The actual dimensions are stored the variant for the module. Every module can have various different variants, for example with the same electrical behaviour, but different numbers of gates \nref{fig:modules_with_different_gate_number}.
 
 \begin{figure}
 	\centering
@@ -13,17 +13,18 @@ On module in the terminology of Plantage is just a rectangular shape. From that 
 Also a module typically has some pins, which are named themselves and have a net name, which they belong to. One pin can have some contact areas, but must have at least one. Every contact area is only a rectangular shape, which has a height and width and is positioned relative to the module position.
 
 \section{Group}
-In Plantage there are two different types of groups. One type contains only groups and the other one only modules [\ref{fig:group_of_modules}]. At the moment it is not supported to mix modules and groups in one group. This is important, because slightly different algorithms must be applied for every type of group.
+In Plantage there are two different types of groups. One type contains only groups and the other one only modules \nref{fig:group_of_modules}. At the moment it is not supported to mix modules and groups in one group. This is important, because slightly different algorithms must be applied for every type of group.
 
 \begin{figure}
 	\centering
 	\subfloat[group of single modules]{\includegraphics[scale=0.5]{FIG/group_of_modules.png}}
 	\subfloat[group of two groups]{\includegraphics[scale=0.5]{FIG/group_of_groups.png}}
 	\caption{groups arrange modules and groups together}
+	\label{fig:group_of_modules}
 \end{figure}
 
 \section{Shapefunction}
-A shape function is basically a list of possible layouts for a given circuit. This list is called shapefunction [\ref{fig:shapefunction}], because the minimum possible area for these placements is a hyperbolic function and the placements are located near to this so called pareto front.
+A shape function is basically a list of possible layouts for a given circuit. This list is called shapefunction \nref{fig:shapefunction}, because the minimum possible area for these placements is a hyperbolic function and the placements are located near to this so called pareto front.
 
 \begin{figure}
 	\centering
@@ -39,7 +40,7 @@ A shape is the layout for a certain couple of modules. On the one hand it is use
 In the design of analog circuits a bunch of constraints have to be met. The mainly consider, that certain elements of the circuit should have as similar electrical characteristics as possible. The most prominent example for such a pair of modules are the parts of a differential pair. Differences in these transistors result in a bigger offset of the resulting amplifier, which should be as low as possible.
 
 \subsection{Symmetry Constraint}
-Symmetry constraints define a vertical or horizontal symmetry axis for modules. They can contain two different types: Single modules and pair modules. Single modules are placed self symmetric to the axis, pair modules are symmetric pairwise. For the symmetry only the centers of gravity are concerned, therefore pair modules can have different shapes. [\ref{fig:constraint_symmetry}]
+Symmetry constraints define a vertical or horizontal symmetry axis for modules. They can contain two different types: Single modules and pair modules. Single modules are placed self symmetric to the axis, pair modules are symmetric pairwise. For the symmetry only the centers of gravity are concerned, therefore pair modules can have different shapes. \nref{fig:constraint_symmetry}
 
 \begin{figure}
 	\centering
@@ -49,7 +50,7 @@ Symmetry constraints define a vertical or horizontal symmetry axis for modules. 
 \end{figure}
 
 \subsection{Alignment Constraint}
-An alignment constraint defines a relative positions between modules, vertical or horizontal [\ref{fig:constraint_alignment}]. In the terminology of plantage you allways have a A- and B-module. In the case of a horizontal alignment the A-module is placed left of the B-module, in the other case of a vertical alignment the A-module is placed below of the B-module. Additionally it is possible to define a minimum distance between the modules.
+An alignment constraint defines a relative positions between modules, vertical or horizontal \nref{fig:constraint_alignment}. In the terminology of plantage you allways have a A- and B-module. In the case of a horizontal alignment the A-module is placed left of the B-module, in the other case of a vertical alignment the A-module is placed below of the B-module. Additionally it is possible to define a minimum distance between the modules.
 
 \begin{figure}
 	\centering
@@ -79,7 +80,7 @@ Typically the manufacturer of the chip provides a so called \textit{tech-file} f
 
 The first two rules, considering minimum width and spaces, have one value, the actual minimum width or distance, and the layer, which they should be applied on. The last two types have also a value, but additionally two layers, on which they must be considered. All the rules must be applied to the placement and the routes. As the width, spacing and enclosure rules are the important ones for routing I will concentrate on those three.
 
-The minimum spacing rule [\ref{fig:technology_rule_spacing}] is quite easy to understand, it only describes a minimal distance between two shapes on a certain layer. These rules may not be considered if deep trench isolated transistors are concerned, but this doesn't affect the routing. Deep trench isolated transistors result only in a possible bigger, combined, forbidden area for routes.
+The minimum spacing rule \nref{fig:technology_rule_spacing} is quite easy to understand, it only describes a minimal distance between two shapes on a certain layer. These rules may not be considered if deep trench isolated transistors are concerned, but this doesn't affect the routing. Deep trench isolated transistors result only in a possible bigger, combined, forbidden area for routes.
 
 \begin{figure}
 	\centering
@@ -88,7 +89,7 @@ The minimum spacing rule [\ref{fig:technology_rule_spacing}] is quite easy to un
 	\label{fig:technology_rule_spacing}
 \end{figure}
 
-Minimum widths are very central technology rules for the routing [\ref{fig:technology_rule_width}]. These values are used as width for the routes and can be different for every layer.
+Minimum widths are very central technology rules for the routing \nref{fig:technology_rule_width}. These values are used as width for the routes and can be different for every layer.
 
 \begin{figure}
 	\centering
