@@ -73,15 +73,14 @@ If the two rectangles do not overlap it becomes a little bit more difficult. In 
 
 After the algorithm has selected start and target contact areas the next step is to avoid routes across modules. For this purpose during all the following steps the modules are considered as obstacles. But during the first step usually the route has first to get out of the module. To avoid additional, accidentally added, gates the algorithm has to choose the shortest way to get out of the module. To decrease the resistance it is also possible to start right at the contact area to the next layer and use for example metal to get out of the module as fast as possible.
 
-As the algorithm now has all the necessary information the actual line expansion routing can start. The main idea behind a line expansion router is that the routes are created sequentially. Every single step is based on a map of obstacles, which the route mustn't cross. From the starting point beginning always the next possible point of a route is calculated and the algorithm afterwards again applied to this partial problem. At the beginning of this recursive algorithm, as usual, the terminating condition is checked: If we have reached the target point. In every single step there are several decisions to be made: First the possible directions are grouped in good and bad directions \nref{fig:good_and_bad_directions}. Good directions are those, which reduce the distance to the target and bad ones are all the others.
+As the algorithm now has all the necessary information the actual line expansion routing can start. The main idea behind a line expansion router is that the routes are created sequentially. Every single step is based on a map of obstacles, which the route mustn't cross. From the starting point beginning always the next possible point of a route is calculated and the algorithm afterwards again applied to this partial problem. At the beginning of this recursive algorithm, as usual, the terminating condition is checked: If we have reached the target point. In every single step there are several decisions to be made: First the possible directions are grouped in good and bad directions \nref{fig:router_good_bad_direction}. Good directions are those, which reduce the distance to the target and bad ones are all the others.
 
-%\begin{figure}
-%	\centering
-%	\input{FIG/good_and_bad_directions.svg}
-%  	\caption{good and bad directions}
-%	\label{fig:good_and_bad_directions}
-%\end{figure}
-PICTURE MISSING GOOD AND BAD DIRECTIONS
+\begin{figure}
+	\centering
+	\input{FIG/router_good_bad_direction.svg}
+  	\caption{good and bad directions}
+	\label{fig:router_good_bad_direction}
+\end{figure}
 
 Additionally it makes no sense to go back the same direction where the last step came from. Also the same direction like the last step is not senseful. Because if this would be a good decision, the last step could have gone further. So these two directions are removed from the good directions. After this selection the router can make one step further in every good directon, as far as possible. This means, that the next step can go as far, as no obstacle is on the way or the target (in this coordinate) is reached \nref{fig:router_go_as_far_as_possible}.
 
