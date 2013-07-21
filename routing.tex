@@ -84,13 +84,14 @@ As the algorithm now has all the necessary information the actual line expansion
 
 Additionally it makes no sense to go back the same direction where the last step came from. Also the same direction like the last step is not senseful. Because if this would be a good decision, the last step could have gone further. So these two directions are removed from the good directions. After this selection the router can make one step further in every good directon, as far as possible. This means, that the next step can go as far, as no obstacle is on the way or the target (in this coordinate) is reached \nref{fig:router_go_as_far_as_possible}.
 
-%\begin{figure}
-%	\centering
-%	\input{FIG/router_go_as_far_as_possible.svg}
-%  	\caption{one step into a good direction can go as far as possible}
-%	\label{fig:router_go_as_far_as_possible}
-%\end{figure}
-PICTURE MISSING ROUTER GO AS FAR AS POSSIBLE
+\begin{figure}
+	\centering
+	\subfloat[no obstacle]{\includegraphics[scale=0.7]{FIG/router_as_far_as_possible.png}}
+	\subfloat[with obstacle]{\includegraphics[scale=0.7]{FIG/router_as_far_as_possible_obstacle.png}}
+	\caption{in a good direction the route can go as far as possible}
+	\label{fig:router_go_as_far_as_possible}
+\end{figure}
+
 
 During the calculation of the steps towards the target we count those, which are feasible. If none of them is feasible the algorithm will have to select one of the bad directions for the next step. A major premission for this is also, that our last step ended at an obstacle. The router now can go as far as necessary into this bad direction \nref{fig:router_go_as_far_as_necessary}.
 
