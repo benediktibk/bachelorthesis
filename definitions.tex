@@ -77,19 +77,20 @@ Typically the manufacturer of the chip provides a so called \textit{tech-file} f
 \item minimum enclosure
 \end{itemize}
 
-The first two rules, considering minimum width and spaces, have one value, the actual minimum width or distance, and the layer, which they should be applied on. The last two types have also a value, but additionally two layers, on which they must be considered. But let us first get to know the other two types.
+The first two rules, considering minimum width and spaces, have one value, the actual minimum width or distance, and the layer, which they should be applied on. The last two types have also a value, but additionally two layers, on which they must be considered. All the rules must be applied to the placement and the routes. As the width, spacing and enclosure rules are the important ones for routing I will concentrate on those three.
 
-PICTURE MISSING MINIMUM SPACING
+The minimum spacing rule is quite easy to understand, it only describes a minimal distance between two shapes on a certain layer. These rules may not be considered if deep trench isolated transistors are concerned, but this doesn't affect the routing. Deep trench isolated transistors result only in a possible bigger, combined, forbidden area for routes.
 
-The minimum spacing rule is quite easy to understand, it only describes a minimal distance between two shapes on a certain layer. These rules may not be considered if deep trench isolated transistors are concerned, but this doesn't affect the routing. Deep trench isolated transistors result only in a possible bigger, combined, forbidden area.
+\begin{figure}
+	\centering
+	\input{FIG/technology_rule_spacing.svg}
+	\caption{minimum spacing rule}
+	\label{fig:technology_rule_spacing}
+\end{figure}
 
 PICTURE MISSING MINIMUM WIDTH
 
 Minimum widths are very central technology rules for the routing. These values are used as width for the routes and can be different for every layer.
-
-PICTURE MISSING MINIMUM NOTCH
-
-DESCRIPTION MISSING MINIMUM NOTCH
 
 PICTURE MISSING MINIMUM ENCLOSURE
 
