@@ -37,10 +37,17 @@ A shape is the layout for a certain couple of modules. On the one hand it is use
 
 \section{Constraints}
 In the design of analog circuits a bunch of constraints have to be met. The mainly consider, that certain elements of the circuit should have as similar electrical characteristics as possible. The most prominent example for such a pair of modules are the parts of a differential pair. Differences in these transistors result in a bigger offset of the resulting amplifier, which should be as low as possible.
-\subsection{Symmetry Constraint}
-Symmetry constraints define a vertical or horizontal symmetry axis for modules. They can contain two different types: Single modules and pair modules. Single modules are placed self symmetric to the axis, pair modules are symmetric pairwise.
 
-PICTURE MISSING SYMMETRY CONSTRAINT
+\subsection{Symmetry Constraint}
+Symmetry constraints define a vertical or horizontal symmetry axis for modules. They can contain two different types: Single modules and pair modules. Single modules are placed self symmetric to the axis, pair modules are symmetric pairwise. For the symmetry only the centers of gravity are concerned, therefore pair modules can have different shapes. [\ref{fig:constraint_symmetry}]
+
+\begin{figure}
+	\centering
+	\input{FIG/constraint_symmetry.svg}
+	\caption{horizontal symmetry constraint with one pair of modules and one single module}
+	\label{fig:constraint_symmetry}
+\end{figure}
+
 
 \subsection{Alignment Constraint}
 An alignment constraints defines relative positions between modules, vertical or horizontal.
