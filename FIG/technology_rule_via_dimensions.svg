@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="300"
-   height="200"
+   width="360"
+   height="260"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="technology_rule_width.svg">
+   sodipodi:docname="technology_rule_via_dimensions.svg">
   <defs
      id="defs4">
     <marker
@@ -78,16 +78,34 @@
          offset="1"
          id="stop3797-4" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3793"
-       id="linearGradient3014"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-380.07521,-1844.7147)"
-       x1="320.00333"
-       y1="872.36407"
-       x2="360.00089"
-       y2="872.36407" />
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart-6"
+       style="overflow:visible">
+      <path
+         id="path3845-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-7"
+       style="overflow:visible">
+      <path
+         id="path3848-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -96,9 +114,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0000001"
-     inkscape:cx="217.23437"
-     inkscape:cy="120.84226"
+     inkscape:zoom="2"
+     inkscape:cx="91.453884"
+     inkscape:cy="128.95275"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -108,7 +126,9 @@
      inkscape:window-y="-3"
      inkscape:window-maximized="1"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     objecttolerance="10000"
+     guidetolerance="10000">
     <inkscape:grid
        type="xygrid"
        id="grid2985"
@@ -135,62 +155,108 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-852.36218)">
+     transform="translate(0,-792.36218)">
     <rect
        style="fill:#008000;fill-opacity:1;stroke:none"
-       id="rect3761-9-2"
-       width="40.001469"
-       height="120.02698"
-       x="-992.35144"
-       y="60.073872"
+       id="rect3761-9-2-1"
+       width="180.00145"
+       height="179.99573"
+       x="-992.36316"
+       y="20.003559"
        transform="matrix(0,-1,1,0,0,0)" />
     <rect
-       style="fill:url(#linearGradient3014);fill-opacity:1;stroke:none"
-       id="rect3761-9-2-0"
-       width="39.997562"
-       height="40.003056"
-       x="-60.071857"
-       y="-992.35211"
-       transform="scale(-1,-1)" />
+       style="fill:#ff6600;fill-opacity:1;stroke:none"
+       id="rect3761-9-2"
+       width="100.00146"
+       height="99.999634"
+       x="-952.36316"
+       y="60.003563"
+       transform="matrix(0,-1,1,0,0,0)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 180.09378,952.34867 40,0"
+       d="m 160.34378,1012.0987 40,0"
        id="path3017"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 180.09378,992.34867 40,0"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 160.02489,952.33562 80.00091,0"
        id="path3019"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="204"
-       y="912.36218"
+       x="226"
+       y="910.36218"
        id="text3023"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3025"
-         x="204"
-         y="912.36218"
+         x="226"
+         y="910.36218"
          style="font-size:12px">minimum width</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow1Lend)"
-       d="m 200,20 0,80"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-mid:none;marker-end:url(#Arrow1Lend)"
+       d="m 219.96536,854.41215 0,95.67059"
        id="path3027"
-       inkscape:connector-curvature="0"
-       transform="translate(0,852.36218)" />
+       inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 200,140 0,-40"
+       d="m 200,1032.3622 0,-40.00002"
        id="path3029"
-       inkscape:connector-curvature="0"
-       transform="translate(0,852.36218)" />
+       inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)"
-       d="m 200,180 0,-40"
+       d="m 117.74999,1012.3622 40.00002,0"
        id="path3031"
-       inkscape:connector-curvature="0"
-       transform="translate(0,852.36218)" />
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="68"
+       y="868.36218"
+       id="text3004"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3006"
+         x="68"
+         y="868.36218">layer two</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="40"
+       y="832.36218"
+       id="text3004-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3006-8"
+         x="40"
+         y="832.36218">layer one</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 160.01568,852.35985 79.50713,0"
+       id="path3019-0"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 159.98377,1032.3041 0,-79.94361"
+       id="path3019-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-mid:none;marker-end:url(#Arrow1Lend)"
+       d="m 297.30063,1012.2474 -95.67055,0"
+       id="path3027-3"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="222"
+       y="1008.3622"
+       id="text3023-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3025-4"
+         x="222"
+         y="1008.3622"
+         style="font-size:12px">minimum enclosure</tspan></text>
   </g>
 </svg>

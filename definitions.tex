@@ -100,10 +100,13 @@ Minimum widths are very central technology rules for the routing \nref{fig:techn
 
 The minimum enclosure rules describe minimum distances, which need to be met between shapes on different layers. Typically in a technology file we only have minimum enclosure rules, where one of the considered layers is a via layer. A via layer is during manufacturing an additional layer, in which the connections between the different layers are created. For the routing these rules result in the dimensions of the vias on the layers, which are connected.
 
-PICTURE MISSING MINIMUM ENCLOSURE
-
-Every via definition must have two minimum enclosure rules, one for every layer, which is connected through the via. Additionally we need on minimum width rule for the via layer, which describes the width of the acutal connection. From these three rules we then can calculate the dimensions of the via, which typically differ for the two layers.
+Every via definition must have two minimum enclosure rules, one for every layer, which is connected through the via. Additionally we need one minimum width rule for the via layer, which describes the width of the acutal connection. From these three rules we then can calculate the dimensions of the via, which typically differ for the two layers \nref{fig:technology_rule_via_dimensions}.
 
 \[\text{via dimension} = 2 \cdot \text{minimun enclosure} + \text{minimum via width}\]
 
-PICTURE MISSING VIA DIMENSIONS
+\begin{figure}
+	\centering
+	\input{FIG/technology_rule_via_dimensions.svg}
+	\caption{minimum width rule}
+	\label{fig:technology_rule_via_dimensions}
+\end{figure}
