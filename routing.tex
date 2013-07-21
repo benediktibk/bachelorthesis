@@ -86,22 +86,21 @@ Additionally it makes no sense to go back the same direction where the last step
 
 \begin{figure}
 	\centering
-	\subfloat[no obstacle]{\includegraphics[scale=0.7]{FIG/router_as_far_as_possible.png}}
-	\subfloat[with obstacle]{\includegraphics[scale=0.7]{FIG/router_as_far_as_possible_obstacle.png}}
+	\subfloat[no obstacle]{\includegraphics[scale=0.8]{FIG/router_as_far_as_possible.png}}
+	\subfloat[with obstacle]{\includegraphics[scale=0.8]{FIG/router_as_far_as_possible_obstacle.png}}
 	\caption{in a good direction the route can go as far as possible}
 	\label{fig:router_go_as_far_as_possible}
 \end{figure}
 
 
-During the calculation of the steps towards the target we count those, which are feasible. If none of them is feasible the algorithm will have to select one of the bad directions for the next step. A major premission for this is also, that our last step ended at an obstacle. The router now can go as far as necessary into this bad direction \nref{fig:router_go_as_far_as_necessary}.
+During the calculation of the steps towards the target we count those, which are feasible. If none of them is feasible the algorithm will have to select one of the bad directions for the next step. A major premission for this is also, that our last step ended at an obstacle. The router now can go as far as necessary into this bad direction \nref{fig:router_as_far_as_necessary}.
 
-%\begin{figure}
-%	\centering
-%	\input{FIG/router_go_as_far_as_necessary.svg}
-% 	\caption{one step into a bad direction should go only as far as necessary}
-%	\label{fig:router_go_as_far_as_necessary}
-%\end{figure}
-PICTURE MISSING ROUTER GO AS FAR AS NECESSARY
+\begin{figure}
+	\centering
+	\input{FIG/router_as_far_as_necessary.svg}
+ 	\caption{one step into a bad direction should go only as far as necessary}
+	\label{fig:router_as_far_as_necessary}
+\end{figure}
 
 Last but no least it is also possible to switch to the neighboured layers.
 
