@@ -48,11 +48,15 @@ Symmetry constraints define a vertical or horizontal symmetry axis for modules. 
 	\label{fig:constraint_symmetry}
 \end{figure}
 
-
 \subsection{Alignment Constraint}
-An alignment constraints defines relative positions between modules, vertical or horizontal.
+An alignment constraints defines relative positions between modules, vertical or horizontal. In the terminology of plantage you allways have a A- and B-module. In the case of a horizontal alignment the A-module is placed left of the B-module, in the other case of a vertical alignment the A-module is placed below of the B-module. Additionally it is possible to define a minimum distance between the modules.
 
-PICTURE MISSING ALIGNMENT CONSTRAINT
+\begin{figure}
+	\centering
+	\input{FIG/constraint_aligment.svg}
+	\caption{horizontal alignment constraint}
+	\label{fig:constraint_aligment}
+\end{figure}
 
 \subsection{Group Symmetry Constraint}
 The group symmetry constraint is nearly the same like the symmetry constraint. The only difference is, that it can be applied to groups instead of modules. Again we can have single groups, which are self symmetric placed, or pair groups, which are pairwise symmetric to the symmetry axis.
