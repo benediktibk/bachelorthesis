@@ -96,7 +96,7 @@ Additionally it makes no sense to go back the same direction where the last step
 \end{figure}
 
 
-During the calculation of the steps towards the target we count those, which are feasible. If none of them is feasible the algorithm will have to select one of the bad directions for the next step. A major premission for this is also, that our last step ended at an obstacle. The router now can go as far as necessary into this bad direction \nref{fig:router_as_far_as_necessary}.
+During the calculation of the steps towards the target I count those, which are feasible. If none of them is feasible the algorithm will have to select one of the bad directions for the next step. A major premission for this is also, that our last step ended at an obstacle. The router now can go as far as necessary into this bad direction \nref{fig:router_as_far_as_necessary}.
 
 \begin{figure}
 	\centering
@@ -123,6 +123,11 @@ For this first algorithm a lot of different possibilities for every necessary co
 
 PICTURE MISSING OF ROUTED MILLER AMPLIFIER (LAYOUT)
 
+\subsection{Line Expansion Feasibility Router}
+In this special case I had to implement the routing into the hierarchical placing algorithm. This creates some additional requirements for the routing algorithms. The most important difference to an usual placer is that the actual positions of a module can change. Because of this the positions are even not stored, only the selected variants and the enumeration sequence is used to specify a certain placement. As the positions of the routes would be relative to the module positions it is not really useful to store the routing results for the next higher hierarchy level. Another reason for this is the possibility of other modules, which could overlap with routes after the calculation of the placement on the next higher level. But it is still important to try to route the placement, as it may result in very crude and long routes, which would cause a bigger area, or it could be even impossible to route the placement at all. Because of these special requirements it is possible to select a different router for the pre routing step than for the final routing. Actually it would be possible to select here every router, but it is only reasonable to select one which requires less computing time.
+
+And this is the point where the line expansion feasibility router comes into play. This algorithm is a modified version of the basic line expansion algorithm. The only difference  is the amount of possible routes which are created for every necessary connection. The basic version creates as much as possible and the modified version only one. This will result in usually quite bad layouts, and because of this the router shouldn't be use for the final step. But as pre router the algorithm is quite useful, as it is very fast and can select very efficient, if a placement is at least feasible to route for a line expansion router.
+
 \subsection{Extended Line Expansion Router}
 
 \subsubsection{Creation of routes}
@@ -130,3 +135,5 @@ MISSING
 
 \subsubsection{Selection of routes}
 MISSING
+
+\section{Pre-Routing}
