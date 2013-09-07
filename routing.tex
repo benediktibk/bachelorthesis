@@ -43,23 +43,28 @@ The GUI-part of this application also needed some adaptions. This work was mainl
 \item possibility to change algorithm settings
 \end{itemize}	
 
-\section{Overview of Existing Routing Algorithms}
-A really nice overview of the existing routing algorithms and the different approaches can be found in \cite[page 149 till 201]{springer:eda_analog_routing}. The more sophisticated routing algorithms described there are based on several basic algorithms:
+\section{Overview of Routing Algorithms}
+A really nice overview of the existing routing algorithms and the different approaches can be found in \cite[page 149 till 201]{springer:eda_analog_routing}. The more sophisticated routing algorithms described there are based on two basic algorithms:
 \begin{itemize}
 \item Maze Router
 \item Line Router
-\item Channel Router
 \end{itemize}
-To find out which type of algorithm may be appropiate in my case I will take a short look on the most important algorithms.
+This algorithms are so called general purpose router, they can be used for global and detailed routing. To find out which type of algorithm may be appropiate in my case I will take a short look on the most important algorithms.
 
 \subsection{Basic Routing Algorithms}
 \subsubsection{Maze Router}
+Another often used name for algorithm is Lee's algorithm. But whatever the name is, it is based on a grid, where the obstacles and pins can be filled in. Basically, this is the whole information, which is necessary for the router. Afterwards a wave of numbers is started from one pin, and if this wave reaches the target a possible routing is found \nref{fig:maze_router}. The router guarantees the shortest possible route and will find a route in all cases, if it is possible \cite[p. 693]{kaufmann:electronic_design_automation}. So basically this is a very simple approach, but it has several drawbacks. First of all it is quite slow and very memory consuming \cite[p. 693]{kaufmann:electronic_design_automation}, as a quite big matrix might be necessary. This memory consumption also relies heavily on the grid size, which raises the next question: How find should be the grid? Those aren't problems which can not be solved. So, for example to attack the problem with the performance it is possible to transform the algorithm into the A*-Algorithm, which is actually just a modified maze router that prefers the shorter directions to the target. Also for the other problems there are solutions, which are mainly part of the more sophisticated routing algorithms.
+
+PICTURE MISSING MAZE ROUTER
 
 \subsubsection{Line Router}
+The main difference from a line router to a maze router is the usage of lines as part of a route instead of points. This improves the memory usage and also usually avoids unnecessary bends, but at the same time this modification causes the loss of the guarantee to find the shortest path \cite[p. 695]{kaufmann:electronic_design_automation}. The other big difference lies in the search algorithm itself, as the line router performs a depth-first search instead of a breadth-first search like the maze router. The basic idea behind this type of router is to try to reach the target, or at least on of its coordinate, through a as long as possible line. This line may hit an obstacle, which means that the direction must be changed.
 
 \subsection{Steiner Routing}
 
 \subsection{Sophisticated Routing Algorithms}
+
+\subsection{Template Based Algorithms}
 
 
 \section{Implemented Routing Algorithms}
