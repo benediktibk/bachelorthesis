@@ -61,13 +61,36 @@ PICTURE MISSING MAZE ROUTER
 The main difference from a line router to a maze router is the usage of lines as part of a route instead of points. This improves the memory usage and also usually avoids unnecessary bends, but at the same time this modification causes the loss of the guarantee to find the shortest path \cite[p. 695]{kaufmann:electronic_design_automation}. The other big difference lies in the search algorithm itself, as the line router performs a depth-first search instead of a breadth-first search like the maze router. The basic idea behind this type of router is to try to reach the target, or at least on of its coordinate, through a as long as possible line. This line may hit an obstacle, which means that the direction must be changed.
 
 \subsection{Steiner Routing}
+The algorithms above only considered two-pin nets. Very often nets have more than two pins. For these cases a possible solution would be to consider always only two pins at a time and connect the others sequentally to the previous ones. This can result in a lot worse results than the optimum \cite[p. 701]{kaufmann:electronic_design_automation}. A better approach is to use a Steiner-tree \cite[page 153]{springer:eda_analog_routing}.
 
 \subsection{Sophisticated Routing Algorithms}
+As it is not the topic of this thesis to describe in detail every possible routing algorithm I just want to bring here up some possible approaches. They are build around several very nice ideas but had all one drawback, which made them not useful for the used hierarchical placer, or were a bit to complex to be easy to implement. As the target of this thesis is mainly to create feasible and useful, but not perfect, layouts, I haven't chosen one of these sophisticated algorithms.
+\begin{itemize}
+\item ROSA router \cite[page 165]{springer:eda_analog_routing}
+\item MIGHTY \cite[page 166]{springer:eda_analog_routing}
+\item ILAC \cite[page 167]{springer:eda_analog_routing}
+\item SALIM \cite[page 167]{springer:eda_analog_routing}
+\item SLAM \cite[page 167]{springer:eda_analog_routing}
+\item Hierarhical global router \cite[page 168]{springer:eda_analog_routing}
+\item Plan-based layout algorithm \cite[page 168]{springer:eda_analog_routing}
+\item ANAGRAM \cite[page 168]{springer:eda_analog_routing}
+\item ANAGRAM II \cite[page 168]{springer:eda_analog_routing}
+\item area router \cite[page 168]{springer:eda_analog_routing}
+\item modified Lee's algorithm \cite[page 170]{springer:eda_analog_routing}
+\item ROAD \cite[page 170]{springer:eda_analog_routing}
+\item ANAGRAM III \cite[page 170]{springer:eda_analog_routing}
+\item router with constraint generator \cite[page 172]{springer:eda_analog_routing}
+\end{itemize}
+
+\subsection{Routing algorithms integrated into the placer}
+It could be a very good idea to try to integrate the routing into the placer. Possible approaches into this direction are KOAN \cite[page 178]{springer:eda_analog_routing}, RACHANA \cite[page 178]{springer:eda_analog_routing}, GELSA \cite[page 179]{springer:eda_analog_routing}, and several others. The major problem with these solutions is the big modification of the placer. Actually it is quite useless to try to integrate the routing algorithm this way afterwards into a placer, as the placer must be created for this case with the routing in mind from the beginning. As the placer in plantage wasn't supposed to include also the routing algorithm I had to use a different approach.
 
 \subsection{Template Based Algorithms}
-
+Template based algorithms start not from scratch, they already have a possible layout for a slightly different circuit or technology. Such a solution can be used in several cases and gives the layout designer nearly the full control over the process. But in my case I have to assume that there is no such template available and the intention of the whole set of tools would be, that the user has to provide as less information as possible. This would really mean \textit{electronic design \textbf{automation}} and should be the real target.
 
 \section{Implemented Routing Algorithms}
+MISSING: WHY LINE EXPANSION
+
 During this thesis I implemented three different routing algorithms: First of all a typical line expansion router. This solutions doesn't consider all constraints, but it is able to create at least reasonable results. Afterwards this algorithm was extended to consider additional constraints. To improve the performance I also implemented a very special version of the line expansion router which really only creates feasible, but not very useful routings. This is router can be used for the pre-routing, where the results is thrown away afterwards.
 
 \subsection{Line Expansion Router}
@@ -148,6 +171,9 @@ The major difference of guard rings to usual obstacles is, that they are obstacl
 Finally, if the start point is the same as the end point the algorithm has calculated a feasible and complete route. This result is added to all the possible routes for this necessary connection. From these possible routes the first, quite simple, algorithm chooses only the best one. As this algorithm calculates the routes sequentially it has no information about for example capacitive couplings, therefore the \textit{best} possibility is chosen on the lowest resistance.
 
 For this first algorithm a lot of different possibilities for every necessary connection is quite a lot of information, as it chooses only the shortest one in terms of resistance. But the results, which we generate here, can be reused for the next, extended, version of the line expansion algorithm.
+
+\subsubsection{Mult-Pin Nets}
+MISSING
 
 PICTURE MISSING OF ROUTED MILLER AMPLIFIER (LAYOUT)
 
