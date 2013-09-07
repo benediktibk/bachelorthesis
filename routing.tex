@@ -137,9 +137,15 @@ In this special case I had to implement the routing into the hierarchical placin
 And this is the point where the line expansion feasibility router comes into play. This algorithm is a modified version of the basic line expansion algorithm. The only difference  is the amount of possible routes which are created for every necessary connection. The basic version creates as much as possible and the modified version only one route. This will result in usually quite bad layouts, and because of this the router shouldn't be use for the final step. But as pre router the algorithm is quite useful, as it is very fast and can select very efficient, if a placement is at least feasible to route for a line expansion router.
 
 \subsection{Extended Line Expansion Router}
+This extended version of the line expansion router is based on the simple version. So it is again a sequential approach, with the same drawbacks and advantages as the previous versions. The main difference to it is how the different routes are combined to a complete net and how the possibilities are selected afterwards. But before I discuss the selection I want to describe how the possibilities are generated.
 
-\subsubsection{Creation of routes}
-MISSING
+\subsubsection{Creation of Routes}
+The routing is again seperated into the routing of the nets. For every possibility of the first net there are created again the same amount of possibilities for every other net, and vice versa. One single net is created in the same manner, but in this case it is created by several routes. The first route connects the first two modules, the second route connects the third module to the already existing net, the third route connects the fourth module to the already existing net, and so on. As the line expansion algorithm creates a bunch of possibilities for every route we receive a whole set of possibilities for every net. The maximum number of this possibilities is limited by an algorithm parameter, which creates an implicit limitiation of the maximum possibilities of every route of a net.
 
-\subsubsection{Selection of routes}
+This additional parameter is a quite important one for this version of the router as the computation time increases exponential with this number it is a good starting point if you want to reduce the time spent on routing. As one net can connect more than two modules this count must be distributed to the routes, which constitute the net. In the case of only two modules to connect it is quite easy, the router than selects the as much possibilities for this route as he can spent on the whole net. If there are more modules it becomes a bit more complicated, as for every selection of the first route there are again as much possibilities for the second one, and so on, if we distribute the possibilities equally to all parts of the net. If we continue this thought we get a maximum count of possibilities for each route ($x_{route}$) of a net (with a total maximum count of possibilities $x_{net}$) with $n$ modules:
+\[x_{route} = \sqrt[n]{x_{net}}\]
+
+This formula can also be used for the case of only one module. As I want to exploit the total maximum count of possibilities the the last route of a net can just create as much till the total maximum is reached.
+
+\subsubsection{Selection of Routes}
 MISSING
