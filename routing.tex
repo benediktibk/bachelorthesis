@@ -52,7 +52,7 @@ During this thesis two different routing algorithms were implemented: First of a
 
 \subsection{Line Expansion Router}
 
-\subsubsection{Selection of Target}
+\subsubsection{Select a Target}
 The first thing which the algorithm has to do, before it can calculate a route, is to selected the start and target contact area. There can be several possibilities, as every pin can have several contact areas. Later on we will even see that already created routes can be candidates to start or end with a route. Basically this task can be seen as the selection of the closest rectangles of two lists of possibilities. For this I first want to talk a little bit about how the closest distance between two rectangles can be calculated.
 
 For two rectangles there are several possible constellations. The first one we usually check is, if the overlap. If this is the case we can calculated easily the rectangle which is covered by both \nref{fig:rectangles_overlapping}. The distance is 0 in this case, and as start points for both rectangles we can select the center of gravity of the overlapping area.
@@ -117,14 +117,14 @@ But before I go more into detail of the routing I want to explain the situation 
 
 In the routing first all modules are extracted, which are symmetric and where both parts of the symmetry pair must be connected to the same net. This pairs are then connected together and the only possible start or end point for other routes is than the middle of the route between the pair. In this case middle doesn't have to mean the same distance to both sides, but the same resistance to both modules. Therefore, if for example the route uses different layers from the modules to the middle, it is possible that the middle in terms of resistance doesn't have to be the same like the middle in terms of distance.
 
-\subsubsection{Guards}
+\subsubsection{Guard Rings}
 With guards a designer can protect for example a certain signal from another very noisy one or protect whole module groups. The latter one is for example often used for current mirrors, as they are very sensitive against noise. In physical representation a guard or guard ring is only a layer, for example MET1, contacted to the substrate and connected to a certain Voltage level (often ground). For routing this results only in an additional obstacle on this layer.
 
 PICTURE MISSING OF GUARD RING MET1
 
 The major difference of guard rings to usual obstacles is, that they are obstacles only for certain nets. Or, if you look at it the other way round, a guard ring isn't an obstacle for the nets inside. This is necessary, so that other routes do not use the space inside a guard ring. For example a MET1-guard will result in a normal obstacle, for all nets, on MET1. On all other routing layers there will be also obstacles, but only for nets which mustn't cross the guard ring to get out.
 
-\subsubsection{Selection of the Route}
+\subsubsection{Select a Route}
 Finally, if the start point is the same as the end point the algorithm has calculated a feasible and complete route. This result is added to all the possible routes for this necessary connection. From these possible routes the first, quite simple, algorithm chooses only the best one. As this algorithm calculates the routes sequentially it has no information about for example capacitive couplings, therefore the \textit{best} possibility is chosen on the lowest resistance.
 
 For this first algorithm a lot of different possibilities for every necessary connection is quite a lot of information, as it chooses only the shortest one in terms of resistance. But the results, which we generate here, can be reused for the next, extended, version of the line expansion algorithm.
@@ -139,7 +139,7 @@ And this is the point where the line expansion feasibility router comes into pla
 \subsection{Extended Line Expansion Router}
 This extended version of the line expansion router is based on the simple version. So it is again a sequential approach, with the same drawbacks and advantages as the previous versions. The main difference to it is how the different routes are combined to a complete net and how the possibilities are selected afterwards. But before I discuss the selection I want to describe how the possibilities are generated.
 
-\subsubsection{Creation of Routes}
+\subsubsection{Create Routes}
 The routing is again seperated into the routing of the nets. For every possibility of the first net there are created again the same amount of possibilities for every other net, and vice versa. One single net is created in the same manner, but in this case it is created by several routes. The first route connects the first two modules, the second route connects the third module to the already existing net, the third route connects the fourth module to the already existing net, and so on. As the line expansion algorithm creates a bunch of possibilities for every route we receive a whole set of possibilities for every net. The maximum number of this possibilities is limited by an algorithm parameter, which creates an implicit limitiation of the maximum possibilities of every route of a net.
 
 This additional parameter is a quite important one for this version of the router as the computation time increases exponential with this number it is a good starting point if you want to reduce the time spent on routing. As one net can connect more than two modules this count must be distributed to the routes, which constitute the net. In the case of only two modules to connect it is quite easy, the router than selects the as much possibilities for this route as he can spent on the whole net. If there are more modules it becomes a bit more complicated, as for every selection of the first route there are again as much possibilities for the second one, and so on, if we distribute the possibilities equally to all parts of the net. If we continue this thought we get a maximum count of possibilities for each route ($x_{route}$) of a net (with a total maximum count of possibilities $x_{net}$) with $n$ modules:
@@ -147,5 +147,5 @@ This additional parameter is a quite important one for this version of the route
 
 This formula can also be used for the case of only one module. As I want to exploit the total maximum count of possibilities the the last route of a net can just create as much till the total maximum is reached.
 
-\subsubsection{Selection of Routes}
+\subsubsection{Select Routes}
 MISSING
