@@ -111,10 +111,18 @@ Last but no least it is also possible to switch to the neighboured layers. For m
 To avoid collisions I take in account the preferred directions for every layer. This information is again stored in the technology file and describes, if a layer should be used for horziontal or vertical routes. This reduces the possibility of collisions very efficiently and results in less complex layouts.
 
 \subsubsection{Symmetric Routes}
-MISSING
+In manually created layouts an usual way to route symmetric elements is to create them optical symmetric. This optical symmetry gives the designer an easy way to create symmetry. But the really important part about routing symmetries is to match the parasitics. The resistance of the route is for sure matched for the symmetric routes through an optical symmetry, but the capacitive couplings are obeyed in most cases. Therefore I have also concentrated on the resistance. To also consider the parasitics it would have been necessary to create all routes at the same time, because only with such an approach you can evaluate the capacitive parasitics, otherwise you never know what influence routes will have that will be created afterwards. As I have chosen to create the routes one by one I can't consider the capacities for the symmetries.
+
+But before I go more into detail of the routing I want to explain the situation a bit more. Symmetries are caused by symmetry constraints, which can have, as already described earlier, single and pair modules. Single modules are quite useless for a symmetric routing. The only modules of interest are pair modules, no matter if they must be connected only together or also to another module.
+
+In the routing first all modules are extracted, which are symmetric and where both parts of the symmetry pair must be connected to the same net. This pairs are then connected together and the only possible start or end point for other routes is than the middle of the route between the pair. In this case middle doesn't have to mean the same distance to both sides, but the same resistance to both modules. Therefore, if for example the route uses different layers from the modules to the middle, it is possible that the middle in terms of resistance doesn't have to be the same like the middle in terms of distance.
 
 \subsubsection{Guards}
 With guards a designer can protect for example a certain signal from another very noisy one or protect whole module groups. The latter one is for example often used for current mirrors, as they are very sensitive against noise. In physical representation a guard or guard ring is only a layer, for example MET1, contacted to the substrate and connected to a certain Voltage level (often ground). For routing this results only in an additional obstacle on this layer.
+
+PICTURE MISSING OF GUARD RING MET1
+
+The major difference of guard rings to usual obstacles is, that they are obstacles only for certain nets. Or, if you look at it the other way round, a guard ring isn't an obstacle for the nets inside. This is necessary, so that other routes do not use the space inside a guard ring. For example a MET1-guard will result in a normal obstacle, for all nets, on MET1. On all other routing layers there will be also obstacles, but only for nets which mustn't cross the guard ring to get out.
 
 \subsubsection{Selection of the Route}
 Finally, if the start point is the same as the end point the algorithm has calculated a feasible and complete route. This result is added to all the possible routes for this necessary connection. From these possible routes the first, quite simple, algorithm chooses only the best one. As this algorithm calculates the routes sequentially it has no information about for example capacitive couplings, therefore the \textit{best} possibility is chosen on the lowest resistance.
