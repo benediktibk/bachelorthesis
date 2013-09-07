@@ -145,7 +145,11 @@ The routing is again seperated into the routing of the nets. For every possibili
 This additional parameter is a quite important one for this version of the router as the computation time increases exponential with this number it is a good starting point if you want to reduce the time spent on routing. As one net can connect more than two modules this count must be distributed to the routes, which constitute the net. In the case of only two modules to connect it is quite easy, the router than selects the as much possibilities for this route as he can spent on the whole net. If there are more modules it becomes a bit more complicated, as for every selection of the first route there are again as much possibilities for the second one, and so on, if we distribute the possibilities equally to all parts of the net. If we continue this thought we get a maximum count of possibilities for each route ($x_{route}$) of a net (with a total maximum count of possibilities $x_{net}$) with $n$ modules:
 \[x_{route} = \sqrt[n]{x_{net}}\]
 
-This formula can also be used for the case of only one module. As I want to exploit the total maximum count of possibilities the the last route of a net can just create as much till the total maximum is reached.
+This formula can also be used for the case of only one module. As I want to exploit the total maximum count of possibilities the last route of a net can just create as much variants till the total maximum is reached.
 
 \subsubsection{Select Routes}
-MISSING
+The selection of the routes after the creations makes use of the parasitics. They should be minimized in all cases, the resistance and the capacities. For a minimum resistance only the length and the selection of layers is a matter from interest, but for the capacities the whole geometry must be taken into account. Also, as there are two different values to minimize, the user has to define how important which type of parasitic is to him. There can't be a general definition like \emph{resistance is twice imporant than capacity}. This depends on the whole circuit and the constraints which the circuit designers wants to meet.
+
+The actual selection of the route is quite easy: After the creation step I have a whole bunch of possible routings, where I calculate the parasitic sum
+\[p = w_R \cdot R + w_C \cdot C\]
+(where $w_R$ is the weight for the resistance, $w_C$ the weight for the capacity, $R$ the total resistance and $C$ the total capacity) for every routing. The best one in this term is then the one with the smallest parasitic sum.
