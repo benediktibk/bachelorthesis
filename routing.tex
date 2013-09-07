@@ -170,8 +170,8 @@ Finally, if the start point is the same as the end point the algorithm has calcu
 
 For this first algorithm a lot of different possibilities for every necessary connection is quite a lot of information, as it chooses only the shortest one in terms of resistance. But the results, which we generate here, can be reused for the next, extended, version of the line expansion algorithm.
 
-\subsubsection{Mult-Pin Nets}
-MISSING
+\subsubsection{Multi-Pin Nets}
+To solve the problem of multi-pin nets it would be possible to use a Steiner-tree, as already described previously. But this approach wouldn't really be the easiest one to implement, so I've chosen a different solution. Basically I connect first the first two pins, and the order of the pins is random (actually they are sorted by there name alphabetically, but this was no intention and doesn't really matter). Afterwards I transform the whole new connection into additional possible targets and connect the next pin to this now bigger list of possible targets and select the closest one. The result from this step is again transformed into additional targets for the next pin, and so on.
 
 PICTURE MISSING OF ROUTED MILLER AMPLIFIER (LAYOUT)
 
