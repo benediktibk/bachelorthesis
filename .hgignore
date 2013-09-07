@@ -9,3 +9,6 @@ syntax: glob
 *.lof
 *.lot
 *.out
+*.bbl
+*.blg
+thesis.bib
