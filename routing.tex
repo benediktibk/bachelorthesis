@@ -18,7 +18,7 @@ So for an automatic routing algorithm a lot of different constraints must be con
 \subsection{Plantage}
 
 \subsubsection{Missing Data}
-To actually route the placements some data was missing in plantage. Although at some points the routing was already prepared, example given the net names were available, important information was not given. These include:
+To actually route the placements some data was missing in Plantage. Although at some points the routing was already prepared, example given the net names were available, important information was not given. These include:
 \begin{itemize}
 \item Actual dimensions of the modules
 \item Parameter of the technology
@@ -30,9 +30,9 @@ In awareness of the necessary routing for every module a bigger area was defined
 
 The technology rules are passed through by the ICFBInterface to Plantage. At least for the technology definitions of Austria Microsystems it is not necessary to convert these rules, as the same format is chosen. For other manufacturers a conversion might be necessary.
 
-The vias and routes were not considered at all previously. The main information which is needed to route are the dimension of the vias on the different layers and the width for the routes. Actually there is no real width for a route, but a minimal width, which a route must have. Usually this width is used for the routes. Also the dimensions for the via must be caculated, which can be done as described previously. Also the generated routes and placed vias needed to be added to the output of plantage, so that they can be shown in the GUI.
+The vias and routes were not considered at all previously. The main information which is needed to route are the dimension of the vias on the different layers and the width for the routes. Actually there is no real width for a route, but a minimal width, which a route must have. Usually this width is used for the routes. Also the dimensions for the via must be caculated, which can be done as described previously. Also the generated routes and placed vias needed to be added to the output of Plantage, so that they can be shown in the GUI.
 
-Previously every pin consisted only of one rectangle, which is obviously not enough. This basic information was used to minimize the estimated net length for the placements. But for real routing we need more complex possibilities to define pins, as, for example, the gate can be connected from both sides. Also it is not recommend to contact over the diffusion area. This will result in even more complex contact areas, as they could be split up in different parts. The definition of these areas is done by the user in the GUI and handed over to plantage. The used format defines for every pin, which a module has, at least one contact area, but eventually a lot more. During the routing then the acutal contact area is selected based on a certain heuristic.
+Previously every pin consisted only of one rectangle, which is obviously not enough. This basic information was used to minimize the estimated net length for the placements. But for real routing we need more complex possibilities to define pins, as, for example, the gate can be connected from both sides. Also it is not recommend to contact over the diffusion area. This will result in even more complex contact areas, as they could be split up in different parts. The definition of these areas is done by the user in the GUI and handed over to Plantage. The used format defines for every pin, which a module has, at least one contact area, but eventually a lot more. During the routing then the acutal contact area is selected based on a certain heuristic.
 
 \subsection{ICFBInterface}
 The GUI-part of this application also needed some adaptions. This work was mainly done by Martin Keßler and contained the following parts:
@@ -49,7 +49,7 @@ A really nice overview of the existing routing algorithms and the different appr
 \item Maze Router
 \item Line Router
 \end{itemize}
-These algorithms are so called general purpose router, they can be used for global and detailed routing. To find out which type of algorithm may be appropiate in my case I will take a short look on the most important algorithms.
+These algorithms are so-called general purpose router, they can be used for global and detailed routing. To find out which type of algorithm may be appropiate in my case I will take a short look on the most important algorithms.
 
 \subsection{Basic Routing Algorithms}
 \subsubsection{Maze Router}
@@ -88,7 +88,7 @@ As it is not the topic of this thesis to describe in detail every possible routi
 \end{itemize}
 
 \subsection{Routing algorithms integrated into the placer}
-It could be a very good idea to try to integrate the routing into the placer. Possible approaches into this direction are KOAN \cite[page 178]{springer:eda_analog_routing}, RACHANA \cite[page 178]{springer:eda_analog_routing}, GELSA \cite[page 179]{springer:eda_analog_routing}, and several others. The major problem with these solutions is the big modification of the placer. Actually it is quite useless to try to integrate the routing algorithm this way afterwards into a placer, as the placer must be created for this case with the routing in mind from the beginning. As the placer in plantage wasn't supposed to include also the routing algorithm I had to use a different approach.
+It could be a very good idea to try to integrate the routing into the placer. Possible approaches into this direction are KOAN \cite[page 178]{springer:eda_analog_routing}, RACHANA \cite[page 178]{springer:eda_analog_routing}, GELSA \cite[page 179]{springer:eda_analog_routing}, and several others. The major problem with these solutions is the big modification of the placer. Actually it is quite useless to try to integrate the routing algorithm this way afterwards into a placer, as the placer must be created for this case with the routing in mind from the beginning. As the placer in Plantage wasn't supposed to include also the routing algorithm I had to use a different approach.
 
 \subsection{Template Based Algorithms}
 Template based algorithms start not from scratch, they already have a possible layout for a slightly different circuit or technology. Such a solution can be used in several cases and gives the layout designer nearly the full control over the process. But in my case I have to assume that there is no such template available and the intention of the whole set of tools would be, that the user has to provide as less information as possible. This would really mean \textit{electronic design \textbf{automation}} and should be the real target.
