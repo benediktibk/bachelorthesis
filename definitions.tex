@@ -37,7 +37,7 @@ A shape function is basically a list of possible layouts for a given circuit. Th
 A shape is the layout for a certain couple of modules. On the one hand it is used for the layout of the whole circuit, but on the other hand also for the layout of only circuit parts.
 
 \section{Constraints}
-In the design of analog circuits a bunch of constraints have to be met. The mainly consider, that certain elements of the circuit should have as similar electrical characteristics as possible. The most prominent example for such a pair of modules are the parts of a differential pair. Differences in these transistors result in a bigger offset of the resulting amplifier, which should be as low as possible.
+In the design of analog circuits a bunch of constraints have to be met. They mainly consider, that certain elements of the circuit should have as similar electrical characteristics as possible. The most prominent example for such a pair of modules are the parts of a differential pair. Differences in these transistors result in a bigger offset of the resulting amplifier, which should be as low as possible.
 
 \subsection{Symmetry Constraint}
 Symmetry constraints define a vertical or horizontal symmetry axis for modules. They can contain two different types: Single modules and pair modules. Single modules are placed self symmetric to the axis, pair modules are symmetric pairwise. For the symmetry only the centers of gravity are concerned, therefore pair modules can have different shapes. \nref{fig:constraint_symmetry}
@@ -50,7 +50,7 @@ Symmetry constraints define a vertical or horizontal symmetry axis for modules. 
 \end{figure}
 
 \subsection{Alignment Constraint}
-An alignment constraint defines a relative positions between modules, vertical or horizontal \nref{fig:constraint_alignment}. In the terminology of plantage you allways have a A- and B-module. In the case of a horizontal alignment the A-module is placed left of the B-module, in the other case of a vertical alignment the A-module is placed below of the B-module. Additionally it is possible to define a minimum distance between the modules.
+An alignment constraint defines a relative position between modules, vertical or horizontal \nref{fig:constraint_alignment}. In the terminology of plantage you always have a A- and B-module. In the case of a horizontal alignment the A-module is placed left of the B-module, in the other case of a vertical alignment the A-module is placed below of the B-module. Additionally it is possible to define a minimum distance between the modules.
 
 \begin{figure}
 	\centering
@@ -67,6 +67,8 @@ Again the group alignment constraint is nearly the same like the alignment const
 
 \subsection{Same Variants Constraint}
 The same variants constraint is again very important to for example given differential pairs. To get as far as possible same characterisitics in one placement these modules should have the same variants. They can still have various different variants, but in one certain placement for these modules the same variant is selected.
+
+The implementation of this constraint is based on matching the names of the variants. Therefore it is still possible, that the variants differ, for example the variants for one module are mirrored to the ones of the other part of a pair. This is very useful, as it gives the user a lot more flexibility.
 
 \section{Technology Rules}
 
@@ -88,7 +90,7 @@ The technology rules can have four different types:
 \item minimum enclosure
 \end{itemize}
 
-The first two rules, considering minimum width and spaces, have one value, the actual minimum width or distance, and the layer, which they should be applied on. The last two types have also a value, but additionally two layers, on which they must be considered. All the rules must be applied to the placement and the routes. As the width, spacing and enclosure rules are the important ones for routing I will concentrate on those three.
+The first two rules, considering minimum width and spaces, have one value, the actual minimum width or distance, and the layer, which they should be applied on. The last two types have also a value, but additionally two layers, on which they must be considered. All the rules must be applied to the placement and the routes.
 
 The minimum spacing rule \nref{fig:technology_rule_spacing} is quite easy to understand, it only describes a minimal distance between two shapes on a certain layer. These rules may not be considered if deep trench isolated transistors are concerned, but this doesn't affect the routing. Deep trench isolated transistors result only in a possible bigger, combined, forbidden area for routes.
 
@@ -116,7 +118,14 @@ Every via definition must have two minimum enclosure rules, one for every layer,
 	\label{fig:technology_rule_via_dimensions}
 \end{figure}
 
-Last but not least there are several minimum notch rule definitions available in the technology definition of AMS. They are mostly used for the internal layout design of for example a transistor. During the routing they are unimportant, as a route never has a notch. Therefore I won't describe this type of technology rule in detail here.
+Last but not least there are several minimum notch rule definitions available in the technology definition of AMS. They are mostly used for the internal layout design of for example a transistor. During the routing they define for example a minimum distance between two vias, connected by a route, as this construction forms a notch \nref{fig:technology_rule_notch}.
+
+\begin{figure}
+	\centering
+	\input{FIG/technology_rule_notch.svg}
+	\caption{minimum notch between two vias}
+	\label{fig:technology_rule_notch}
+\end{figure}
 
 \section{Electrical Rules}
 In the tech-file from the manufacturer there are also electrical rules contained. These rules describe the exact electrical behaviour and can be used for example for the simulation. In the routing algorithms later described I will use these values to optimize the behaviour of the circuit layout, therefore I want to describe how they can be interpreted.
