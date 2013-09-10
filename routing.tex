@@ -166,9 +166,14 @@ But before I go more into detail of the routing I want to explain the situation 
 In the routing I first extract all modules, which are symmetric and where both parts of the symmetry pair must be connected to the same net. Afterwards I connect these pairs together and the only possible start or end point for other routes is then the middle of the route between the pair. In this case the middle doesn't has to mean the same distance to both sides, but the same resistance to both modules. Therefore if for instance the route uses different layers from the modules to the middle, it is possible that the middle in terms of resistance can be different to the middle in terms of distance.
 
 \subsubsection{Guard Rings}
-With guards a designer can protect for example a certain signal from another very noisy one or protect whole module groups. The latter one is often used for current mirrors, as they are very sensitive against noise. In physical representation a guard or guard ring is only a layer, for instance MET1, contacted to the substrate and connected to a certain Voltage level (often ground). For the routing this results only in an additional obstacle on this layer.
+With guards \nref{fig:guard_ring} a designer can protect for example a certain signal from another very noisy one or protect whole module groups. The latter one is often used for current mirrors, as they are very sensitive against noise. In physical representation a guard or guard ring is only a layer, for instance MET1, contacted to the substrate and connected to a certain Voltage level (often ground). For the routing this results only in an additional obstacle on this layer.
 
-PICTURE MISSING OF GUARD RING MET1
+\begin{figure}
+	\centering
+	\includegraphics[scale=.6]{FIG/guard_ring.png}
+  	\caption{the common centroid of a differential pair, protected from noise by a guard ring}
+	\label{fig:guard_ring}
+\end{figure}
 
 The major difference of guard rings to usual obstacles is that they are obstacles only for certain nets. Or if you look at it the other way round, a guard ring isn't an obstacle for the nets inside. This is necessary so that other routes do not use the space inside a guard ring, but the pins inside can still be connected. For example a MET1-guard will result in a normal obstacle, for all nets, on MET1. On all other routing layers there will be also obstacles, but only for nets which don't have pins inside the guard ring.
 
