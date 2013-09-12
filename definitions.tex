@@ -128,6 +128,7 @@ Last but not least, there are several minimum notch rule definitions available i
 \end{figure}
 
 \section{Electrical Rules}
+\label{sec:electrical_rules}
 In the tech-file from the manufacturer there are also electrical rules implied. These rules describe the exact electrical behaviour and can be used for example for the simulation. In the routing algorithms later described I will use these values to optimize the behaviour of the circuit layout, therefore I want to describe how they can be interpreted.
 
 The first important value is the sheet resistance. This value describes the resistance of a layer and I used it to calculate the resistance of the routes. I don't need a really exact resistance, only something to measure and compare which takes into account the different layers. Therefore my personal definition for this algorithm of the sheet resistance will possibly be not the right one. In my point of view, in this case it is useful. For routes on one layer I just multiply the sheet resistance value with the length of the route, as I always use the minimum width for routes. A via doesn't really have a length, so I multiply the value with the area. Afterwards, these two results are  summed up for a whole connection and this represents then the resistance of this connection.
