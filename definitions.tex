@@ -40,6 +40,7 @@ A shape is the layout for a certain couple of modules. On the one hand it is use
 In the design of analog circuits a bunch of constraints have to be met. They mainly consider that certain elements of the circuit should have as similar electrical characteristics as possible. The most prominent example for such a pair of modules are the parts of a differential pair. Differences in these transistors result in a bigger offset of the resulting amplifier, which should be as low as possible.
 
 \subsection{Symmetry Constraint}
+\label{subsec:symmetry_constraint}
 Symmetry constraints define a vertical or horizontal symmetry axis for modules. They can contain two different types: single modules and pair modules. Single modules are placed self symmetric to the axis, pair modules are symmetric pairwise. For the symmetry only the centers of gravity are considered, therefore pair modules can have different shapes. \nref{fig:constraint_symmetry}
 
 \begin{figure}
@@ -109,7 +110,10 @@ For some Via-Definitions, for example in the Hit-Kit of AMS, some enclosure rule
 
 Every via definition must have two minimum enclosure rules, one for every layer, which is connected through the via. Additionally, we need one minimum width rule for the via layer, which describes the width of the actual connection. From these three rules we then can calculate the dimensions of the via, which typically differ for the two layers \nref{fig:technology_rule_via_dimensions}.
 
-\[\text{via dimension} = 2 \cdot \text{minimun enclosure} + \text{minimum via width}\]
+\begin{equation}
+\label{eq:via_dimension}
+{via dimension} = 2 \cdot \text{minimun enclosure} + \text{minimum via width}
+\end{equation}
 
 \begin{figure}
 	\centering
@@ -129,9 +133,9 @@ Last but not least, there are several minimum notch rule definitions available i
 
 \section{Electrical Rules}
 \label{sec:electrical_rules}
-In the tech-file from the manufacturer there are also electrical rules implied. These rules describe the exact electrical behaviour and can be used for example for the simulation. In the routing algorithms later described I will use these values to optimize the behaviour of the circuit layout, therefore I want to describe how they can be interpreted.
+In the tech-file from the manufacturer there are also electrical rules implied. These rules describe the exact electrical behaviour and can be used for example for the simulation. In the routing algorithms later described \nref{sec:implemented_algorithms} I will use these values to optimize the behaviour of the circuit layout, therefore I want to describe how they can be interpreted.
 
-The first important value is the sheet resistance. This value describes the resistance of a layer and I used it to calculate the resistance of the routes. I don't need a really exact resistance, only something to measure and compare which takes into account the different layers. Therefore my personal definition for this algorithm of the sheet resistance will possibly be not the right one. In my point of view, in this case it is useful. For routes on one layer I just multiply the sheet resistance value with the length of the route, as I always use the minimum width for routes. A via doesn't really have a length, so I multiply the value with the area. Afterwards, these two results are  summed up for a whole connection and this represents then the resistance of this connection.
+The first important value is the sheet resistance. This value defines the resistance of a layer and I used it to calculate the resistance of the routes. I don't need a really exact resistance, only something to measure and compare which takes into account the different layers. Therefore my personal definition for this algorithm of the sheet resistance will possibly be not the right one. In my point of view, in this case it is useful. For routes on one layer I just multiply the sheet resistance value with the length of the route, as I always use the minimum width for routes. A via doesn't really have a length, so I multiply the value with the area. Afterwards, these two results are  summed up for a whole connection and this represents then the resistance of this connection.
 
 The other two used values are the edge- and areacapacitance. The edgecapacitance describes the capacity between two neighbour routes on the same layer, the areacapacitance the capacity between two routes on the same position but on different layers. The total capacities ($C_e$ and $C_a$) are calculated from the length where two routes are neighbours ($l$), the distance between them ($d$) in case of an edge capacitor, the width they overlap ($w$) in case of an area capacity and the values from the technology file ($C'_e$ and $C'_a$).
 \[C_a = C'_a \cdot l \cdot w\]
