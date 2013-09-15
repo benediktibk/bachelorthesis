@@ -145,7 +145,6 @@ Additionally, it makes no sense to go back the same direction where the last ste
 	\label{fig:router_go_as_far_as_possible}
 \end{figure}
 
-
 During the calculation of the steps towards the target I count those, which are feasible. If none of them is feasible I will have to select one of the bad directions for the next step. A major premission for this is also that the last step ended at an obstacle. The router now can go as far as necessary into this bad direction \nref{fig:router_as_far_as_necessary}.
 
 \begin{figure}
@@ -153,6 +152,15 @@ During the calculation of the steps towards the target I count those, which are 
 	\input{FIG/router_as_far_as_necessary.svg}
  	\caption{a step into a bad direction should go only as far as necessary}
 	\label{fig:router_as_far_as_necessary}
+\end{figure}
+
+Sometimes it is also necessary to go above an obstacle, which is on an layer below or above. This step is also one into a bad direction, because if it would be a good direction it would be done automatically. As it is a bad direction it should go only as far as necessary \nref{fig:router_as_far_as_necessary_above}. The same direction of the obstacle may not be possible as on the current layer only vertical or horizontal routes are allowed.
+
+\begin{figure}
+	\centering
+	\input{FIG/router_as_far_as_necessary_above.svg}
+ 	\caption{a step over or below an obstacle}
+	\label{fig:router_as_far_as_necessary_above}
 \end{figure}
 
 Last but no least it is also possible to switch to the neighboured layers. For modules the obstacle can not be crossed with this way, as they are obstacles at every layer. But if for example the obstacle is just another route a layer switch may solve the problem.
