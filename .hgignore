@@ -12,3 +12,4 @@ syntax: glob
 *.bbl
 *.blg
 thesis.bib
+*.bak

@@ -2,7 +2,7 @@
 
 Even nowadays the routing is often done manually for analog circuits. This is mainly caused by a lack of good tools and consequently the missing trust of engineers in them. The engineers consider a lot of different constraints during the routing, for example symmetries, net lengths and capacitive couplings. All these things have a major impact on the performance of the circuit, as it is very important in the analog world to have a really accurate signal level because only high or low isn't enough.
 
-Additonally, the designer adds guards and rings to the placement to protect certain devices from noise. This noise can come for instance from the clock net or other routes, which carry a signal with high frequency. But high frequencies aren't the only disturbing effects, already during the placement the designer has to consider temperature gradients, caused by transistors with a high power consumption. To avoid problems with different temperatures in the substrate of for example the devices of a differential pair they can be placed symmetric or can even have a common centroid. Around these grouped modules the designer then can create a guard ring to protect the devices even more. An example for a manually routed layout can be seen in \nref{fig:miller_amplifier_routed_layout}.
+Additionally, the designer adds guards and rings to the placement to protect certain devices from noise. This noise can come for instance from the clock net or other routes, which carry a signal with high frequency. But high frequencies aren't the only disturbing effects, already during the placement the designer has to consider temperature gradients, caused by transistors with a high power consumption. To avoid problems with different temperatures in the substrate of for example the devices of a differential pair they can be placed symmetric or can even have a common centroid. Around these grouped modules the designer then can create a guard ring to protect the devices even more. An example for a manually routed layout can be seen in \nref{fig:miller_amplifier_routed_layout}.
 
 So for an automatic routing algorithm a lot of different constraints must be considered. There are even more obstacles than just the devices and already created routes, for instance the routes should pass over guard rings. To solve this problem in the following chapter two different approaches are presented: one simple sequentially line expansion router and one extend version of the previous one, which considers additional constraints. But first I'll  discuss the changes that were necessary for the implementation of the routing algorithms.
 
@@ -26,13 +26,13 @@ First of all, to actually route the placements some data was missing in Plantage
 \item guard rings
 \end{itemize}
 
-In awareness of the necessary routing for every module a bigger area was defined for the placement. The additional space between the modules could then be used to route the placement. Unfortunately, the information about the actual dimension of the modules was lost through this step. Therefore I withdrawed these changes and added the possibility to define a minimum distance between all modules.
+In awareness of the necessary routing for every module a bigger area was defined for the placement. The additional space between the modules could then be used to route the placement. Unfortunately, the information about the actual dimension of the modules was lost through this step. Therefore I withdrew these changes and added the possibility to define a minimum distance between all modules.
 
 The technology rules are passed through by the ICFBInterface to Plantage. At least for the technology definitions of Austria Microsystems it is not necessary to convert these rules, as the same format is chosen. For other manufacturers a conversion might be necessary.
 
-Previously, the vias and routes were not considered at all. The main information which is needed to route are the dimension of the vias on the different layers and the width for the routes. Actually there is no real width for a route, but a minimal width, which a route must have. Usually this width is used for the connections. Also the dimensions for the via must be caculated \nref{eq:via_dimension} and the generated routes and placed vias needed to be added to the output of Plantage, so that they can be shown in the GUI.
+Previously, the vias and routes were not considered at all. The main information which is needed to route are the dimension of the vias on the different layers and the width for the routes. Actually there is no real width for a route, but a minimal width, which a route must have. Usually this width is used for the connections. Also the dimensions for the via must be calculated \nref{eq:via_dimension} and the generated routes and placed vias needed to be added to the output of Plantage, so that they can be shown in the GUI.
 
-Beforehand, every pin consisted only of one rectangle, which is obviously not enough. This basic information was used to minimize the estimated net length for the placements. For real routing we need more complex possibilities to define pins, as for example the gate can be connected from both sides. Moreover it is not recommended to contact over the diffusion area. This will result in even more complex contact areas, as they could be split up in different parts. The definition of these areas is done by the user in the GUI and handed over to Plantage. The used format defines for every pin, which a module has, at least one contact area, but eventually a lot more. During the routing then the acutal contact area is selected based on a certain heuristic.
+Beforehand, every pin consisted only of one rectangle, which is obviously not enough. This basic information was used to minimize the estimated net length for the placements. For real routing we need more complex possibilities to define pins, as for example the gate can be connected from both sides. Moreover it is not recommended to contact over the diffusion area. This will result in even more complex contact areas, as they could be split up in different parts. The definition of these areas is done by the user in the GUI and handed over to Plantage. The used format defines for every pin, which a module has, at least one contact area, but eventually a lot more. During the routing then the actual contact area is selected based on a certain heuristic.
 
 \subsection{ICFBInterface}
 The GUI-part of this application also needed some adaptions. This work was mainly done by Martin Keßler and contained the following parts:
@@ -49,7 +49,7 @@ A really nice overview of the existing routing algorithms and the different appr
 \item Maze Router
 \item Line Router
 \end{itemize}
-These algorithms are so-called general purpose router, they can be used for global and detailed routing. To find out which type of algorithm may be appropiate in my case I will have a short look on the most important algorithms.
+These algorithms are so-called general purpose router, they can be used for global and detailed routing. To find out which type of algorithm may be appropriate in my case I will have a short look on the most important algorithms.
 
 \subsection{Basic Routing Algorithms}
 \subsubsection{Maze Router}
@@ -135,7 +135,7 @@ In every single step I have to make several decisions: First I group the possibl
 	\label{fig:router_good_bad_direction}
 \end{figure}
 
-Additionally, it makes no sense to go back the same direction where the last step came from. Also the same direction like the last step is not reasonable. The reason therefore is that if this would be a good decision, the last step could have gone further. So I remove these two directions from the good directions. After this selection I can make one step further in every good directon, as far as possible. This means that the next step can go as far as no obstacle is on the way or the target (in this coordinate) is reached \nref{fig:router_go_as_far_as_possible}.
+Additionally, it makes no sense to go back the same direction where the last step came from. Also the same direction like the last step is not reasonable. The reason therefore is that if this would be a good decision, the last step could have gone further. So I remove these two directions from the good directions. After this selection I can make one step further in every good direction, as far as possible. This means that the next step can go as far as no obstacle is on the way or the target (in this coordinate) is reached \nref{fig:router_go_as_far_as_possible}.
 
 \begin{figure}
 	\centering
@@ -145,7 +145,7 @@ Additionally, it makes no sense to go back the same direction where the last ste
 	\label{fig:router_go_as_far_as_possible}
 \end{figure}
 
-During the calculation of the steps towards the target I count those, which are feasible. If none of them is feasible I will have to select one of the bad directions for the next step. A major premission for this is also that the last step ended at an obstacle. The router now can go as far as necessary into this bad direction \nref{fig:router_as_far_as_necessary}.
+During the calculation of the steps towards the target I count those, which are feasible. If none of them is feasible I will have to select one of the bad directions for the next step. A major premise for this is also that the last step ended at an obstacle. The router now can go as far as necessary into this bad direction \nref{fig:router_as_far_as_necessary}.
 
 \begin{figure}
 	\centering
@@ -166,7 +166,7 @@ Sometimes it is also necessary to go above an obstacle, which is on an layer bel
 Last but no least it is also possible to switch to the neighboured layers. For modules the obstacle can not be crossed with this way, as they are obstacles at every layer. But if for example the obstacle is just another route a layer switch may solve the problem.
 
 \subsubsection{Avoid Collisions}
-To avoid collisions I take into account the preferred directions for every layer. This information is again stored in the technology file and describes if a layer should be used for horziontal or vertical routes. This reduces the possibility of collisions very efficiently and results in less complex layouts.
+To avoid collisions I take into account the preferred directions for every layer. This information is again stored in the technology file and describes if a layer should be used for horizontal or vertical routes. This reduces the possibility of collisions very efficiently and results in less complex layouts.
 
 \subsubsection{Symmetric Routes}
 In manually created layouts an usual way to route symmetric elements is to create them optical symmetric. This optical symmetry gives the designer an easy way to create symmetry. But the really important part about routing symmetries is to match the parasitics. The resistance of the route is for sure matched for the symmetric routes through an optical symmetry, but the capacitive couplings are obeyed in most cases. Therefore I concentrated on the resistance. To also consider the capacities it would have been necessary to create all routes at the same time. Only with such an approach I can evaluate the capacitive parasitics, otherwise I never know what influence routes created afterwards will have. As I have chosen to create the routes one by one I can't consider the capacities for the symmetries.
@@ -188,7 +188,7 @@ With guards \nref{fig:guard_ring} a designer can protect for example a certain s
 The major difference of guard rings to usual obstacles is that they are obstacles only for certain nets. Or if you look at it the other way round, a guard ring isn't an obstacle for the nets inside. This is necessary so that other routes do not use the space inside a guard ring, but the pins inside can still be connected. For example a MET1-guard will result in a normal obstacle, for all nets, on MET1. On all other routing layers there will be also obstacles, but only for nets which don't have pins inside the guard ring.
 
 \subsubsection{Multi-Pin Nets}
-To solve the problem of multi-pin nets it would be possible to use a Steiner-tree \nref{subsec:steiner_routing}, but this approach wouldn't really be the easiest one to implement. That is why I've chosen a different solution. Basically, I connect at the beginnging the first two pins, where the order of the pins is random (actually they are sorted by there name alphabetically, but this was no intention and doesn't really matter). Afterwards I transform the whole new connection into additional possible targets. From this now bigger list of possible targets I select the closest one and connect the next pin to it. The result of this step is again transformed into additional targets for the next pin, and so on.
+To solve the problem of multi-pin nets it would be possible to use a Steiner-tree \nref{subsec:steiner_routing}, but this approach wouldn't really be the easiest one to implement. That is why I've chosen a different solution. Basically, I connect at the beginning the first two pins, where the order of the pins is random (actually they are sorted by there name alphabetically, but this was no intention and doesn't really matter). Afterwards I transform the whole new connection into additional possible targets. From this now bigger list of possible targets I select the closest one and connect the next pin to it. The result of this step is again transformed into additional targets for the next pin, and so on.
 
 \subsubsection{Select a Route}
 Finally, if the start point is the same as the end point I have to calculate a feasible and complete route. I add the result to all the possible routes for this necessary connection. From these routes the first, quite simple, algorithm chooses only the best one. As this algorithm calculates the routes sequentially it has no information about for example capacitive couplings, therefore the \emph{best} possibility is chosen on the lowest resistance.
