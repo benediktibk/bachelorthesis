@@ -197,7 +197,12 @@ Finally, if the starting point is the same as the ending point I have to calcula
 
 For this first algorithm a lot of different variants for every necessary connection is a lot of information, as it chooses only the shortest one in terms of resistance. But the results, which I generate here, can be reused for the extended version of the line expansion algorithm.
 
-PICTURE MISSING OF ROUTED MILLER AMPLIFIER (LAYOUT)
+\begin{figure}
+	\centering
+	\includegraphics[scale=.6]{FIG/miller_amplifier_routed_basic_line_expansion_2.png}
+  	\caption{layout of a miller amplifier routed with the basic line expansion route}
+	\label{fig:miller_amplifier_routed_basic_line_expansion_2}
+\end{figure}	
 
 \subsection{Line Expansion Feasibility Router}
 In this special case I had to implement the routing into the hierarchical placing algorithm. This creates some additional requirements for the routing algorithms. The most important difference to an usual placer is that the actual positions of a module can change. Because of this, the positions are not stored, only the selected variants and the enumeration sequence is used to specify a certain placement. As the positions of the routes would be relative to the module positions it is not useful to store the routing results for the next higher hierarchy level. Another reason for this is the possibility of other modules, which could overlap with routes after the calculation of the placement on the next higher level. It is still important to try to route the placement, as a placement may cause very long or even infeasible routes. Because of these special requirements it is possible to select a different router for the pre-routing step than for the final routing. Actually, it would be possible to select every router here, but it is only reasonable to select one which requires less computing time.
@@ -209,4 +214,9 @@ This extended version of the line expansion router is based on the simple versio
 \[p = w_R \cdot R + w_{C_a} \cdot C_a + w_{C_e} \cdot C_e\]
 (where $w_i$ are the weights and $R$, $C_a$ and $C_e$ are the parasitics as defined in \nref{sec:electrical_rules}) on which the actual selection is based.
 
-PICTURE MISSING OF ROUTED MILLER AMPLIFIER (LAYOUT)
+\begin{figure}
+	\centering
+	\includegraphics[scale=.4]{FIG/miller_amplifier_routed_extended_line_expansion_2.png}
+  	\caption{layout of a miller amplifier routed with the basic line expansion route}
+	\label{fig:miller_amplifier_routed_extended_line_expansion_2}
+\end{figure}	

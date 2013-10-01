@@ -7,7 +7,7 @@ For the second one, the extend line expansion router, it becomes a lot more diff
 	\centering
 	\subfloat[basic line expansion router]{\includegraphics[scale=0.6]{FIG/miller_amplifier_routed_basic_line_expansion.png}}
 	\subfloat[extended line expansion router]{\includegraphics[scale=0.6]{FIG/miller_amplifier_routed_extended_line_expansion.png}}
-	\caption{two similary placements routed}
+	\caption{two similar placements routed}
 	\label{fig:miller_amplifier_routed_line_expansion_router}
 \end{figure}
 
@@ -37,7 +37,7 @@ The results above show that the layouts created by plantage are at least feasibl
 
 Finally, I was able to reach all the targets claimed in the introduction:
 \begin{itemize}
-\item I have implemented a line expansion router, which creates, in most cases, design rule clean routes\footnote{\label{foot:1}In the cases where the layout is not design rule clean it is usually easy to fix the problem manually. For instance, in special cases the minimum notch rule may be harmed, but then the gap can just be filled up.} and considers symmetries.
+\item I have implemented a line expansion router, which creates, in most cases \footnote{In the cases where the layout is not design rule clean it is usually easy to fix the problem manually. For instance, in special cases the minimum notch rule may be harmed, but then the gap can just be filled up.}, design rule clean routes and considers symmetries \footnote{For capacities the ICFBInterface does not provide enough information about the additional guard ring, therefore it can not be considered}.
 \item Based on the previous router I have implemented an extension of the line expansion router, which tries to reduce the parasitics.
 \item As it isn't sure which one will fit best to the hierarchical placer it is easy to replace the router with a different implementation.
 \end{itemize}
