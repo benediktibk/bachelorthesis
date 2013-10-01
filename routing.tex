@@ -114,12 +114,16 @@ For two rectangles there are several possible constellations. For the first poss
 
 If the two rectangles do not overlap it becomes more difficult. In this case I can at least say that one of the rectangles has its closest point at one of the edges. Actually, there even can be an endless count of solutions for this problem, but I am only interested in one of them. Because of this I select the solution that is the easiest to calculate, which means the selection of a corner for one rectangle. The closest corner from the first rectangle to the second one is one that has the closest euclidean distance to the center of gravity of the second one \nref{fig:rectangles_closest_corner}. As the closest point of the first rectangle is now known, I can start to select the closest point on the second one. This point must be obviously on one of the edges. Every edge is basically a line segment, where the closest point can be calculated easily. For this task I, firstly, need to expand the line segment into a whole line. Secondly, I can then turn this line 90 degrees (it does not matter in which direction as it is a line) and move this new line, so that it crosses the point, from which I want to know the closest point on the line segment. The crossing point of these two lines, if it is also inside the line segment, is the closest point. If this crossing point is outside the line segment, the closest point must be the start or end point of the line segment, which are actually the rectangle's corners.
 
+The task of the selection is at this point not finished, because in special cases it is possible that I can now find again a closer point on the first rectangle to the second one. So I have to do the last step once again, for the last time, but with the point of the second rectangle as source.
+
 \begin{figure}
 	\centering
 	\input{FIG/rectangles_closest_corner.svg}
   	\caption{the closest corner is that one, which has the smallest distance to the center of gravity of the other one}
 	\label{fig:rectangles_closest_corner}
 \end{figure}
+
+A very similar step to this one is done for every step, the selection of a new target. This may be useful, as a different target area can be now closer than previously, mostly if the last step went into a bad direction. The task in this case is to find the closest rectangle to the current point and, afterwards, the closest point on this rectangle.
 
 \subsubsection{Consider Obstacles}
 After the algorithm has selected start and target contact areas the next step is to avoid routes across modules. For this purpose during all the following steps the modules are considered as obstacles. But during the first step usually the route has to get out of the module first. To avoid additional, accidentally added, gates the algorithm has to choose the shortest way to get out of the module. To avoid problems with the design rules it is not possible to start right at the contact area to the next layer and use, for example, metal to get out of the module as fast as possible.
