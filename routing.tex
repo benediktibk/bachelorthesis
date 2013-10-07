@@ -179,7 +179,14 @@ In manually created layouts an usual way to route symmetric elements is to creat
 
 But before I go more into detail of the routing itself I want to further explain the situation. Symmetries are caused by symmetry constraints, which can have, as already described earlier \nref{subsec:symmetry_constraint}, single and pair modules. Single modules are quite useless for a symmetric routing. The only modules of interest are pair modules, no matter if they only must be connected together or also to another module.
 
-In the routing I first extract all modules, which are symmetric and where both parts of the symmetry pair must be connected to the same net. Afterwards, I connect these pairs together and the only possible starting or ending point for other routes is then the middle of the route between the pair. In this case the middle does not have to be the same distance to both sides but the same resistance to both modules. Therefore, if the route uses different layers from the modules to the middle, it is possible that the middle in terms of resistance can be different to the middle in terms of distance.
+In the routing I first extract all modules, which are symmetric and where both parts of the symmetry pair must be connected to the same net. Afterwards, I connect these pairs together and the only possible starting or ending point for other routes is then the middle of the route between the pair \nref{fig:symmetric_routing}. In this case the middle does not have to be the same distance to both sides but the same resistance to both modules. Therefore, if the route uses different layers from the modules to the middle, it is possible that the middle in terms of resistance can be different to the middle in terms of distance.
+
+\begin{figure}
+	\centering
+	\input{FIG/symmetric_routing.svg}
+ 	\caption{a symmetric pair should be only connected in the middle in terms of resistance}
+	\label{fig:symmetric_routing}
+\end{figure}
 
 \subsubsection{Guard Rings}
 With guards \nref{fig:guard_ring} a designer can protect, for example, a certain signal from another very noisy one or protect whole module groups. The latter is often used for current mirrors, as they are very sensitive to noise. In physical representation a guard or guard ring is only a layer, for instance MET1, contacted to the substrate and connected to a certain Voltage level (often ground). For the routing this only results in an additional obstacle on this layer.
