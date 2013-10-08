@@ -3,32 +3,9 @@ As only the basic line expansion router and the extended version produce really 
 
 For the second one, the extend line expansion router, it becomes a lot more difficult to determine manually if there are errors in the layout \nref{fig:miller_amplifier_routed_line_expansion_router}. This router decides which connection should be used also based on the capacitive couplings, therefore it mustn't be always the shortest one.
 
-\begin{figure}
-	\centering
-	\subfloat[basic line expansion router]{\includegraphics[scale=0.6]{FIG/miller_amplifier_routed_basic_line_expansion.png}}
-	\subfloat[extended line expansion router]{\includegraphics[scale=0.6]{FIG/miller_amplifier_routed_extended_line_expansion.png}}
-	\caption{two similar placements routed}
-	\label{fig:miller_amplifier_routed_line_expansion_router}
-\end{figure}
-
 To proof if the Plantage produces better results for circuits without common centroids I have created two layouts, one with the basic line expansion router and one with the extended version. As it can be seen a far smaller distance between the modules is necessary. \nref{fig:miller_amplifier_smaller_routed_line_expansion_router}.
 
-\begin{figure}
-	\centering
-	\subfloat[basic line expansion router]{\includegraphics[scale=0.6]{FIG/miller_amplifier_routed_smaller_basic_line_expansion.png}}
-	\subfloat[extended line expansion router]{\includegraphics[scale=0.6]{FIG/miller_amplifier_routed_smaller_extended_line_expansion.png}}
-	\caption{two similar placements without a common centroid routed}
-	\label{fig:miller_amplifier_smaller_routed_line_expansion_router}
-\end{figure}
-
 To show also the results of a layout with a symmetry I have prepared one simple example which contains only three modules \nref{fig:symmetry_routed}. Two of them form a pair of a symmetry and the other one is a single module in this symmetry. In the layout can be seen that the two connections between the symmetric modules are connected nearly symmetric the third module. The maximum allowed difference in resistance is 5\%, which seems to be hold by both connections. One of them is optical quite unsymmetric connected, but it starts on both ends on POLY. Therefore, the resistance of the whole connection is dominated by those two small parts.
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=.4]{FIG/symmetry_routed.png}
-  	\caption{routed layout of a symmetry}
-	\label{fig:symmetry_routed}
-\end{figure}
 
 \section{Conclusion}
 The results above show that the layouts created by plantage are at least feasible. Additionally, they also consider several constraints for analog circuits. The results are for sure not yet perfect, but this wasn't the aim of this thesis. The really main point was to implement the routing and make it easy to replace the algorithm later, as it is not sure which solution will be the best for the hierarchical placer. This can be done now easily, it is only necessary to inherit from the class Router.
@@ -46,3 +23,26 @@ Finally, I was able to reach all the targets claimed in the introduction:
 \item Based on the previous router I have implemented an extension of the line expansion router, which tries to reduce the parasitics.
 \item As it isn't sure which one will fit best to the hierarchical placer it is easy to replace the router with a different implementation.
 \end{itemize}
+
+\begin{figure}
+	\centering
+	\subfloat[basic line expansion router]{\includegraphics[scale=0.6]{FIG/miller_amplifier_routed_basic_line_expansion.png}}
+	\subfloat[extended line expansion router]{\includegraphics[scale=0.6]{FIG/miller_amplifier_routed_extended_line_expansion.png}}
+	\caption{two similar placements routed}
+	\label{fig:miller_amplifier_routed_line_expansion_router}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=.6]{FIG/symmetry_routed.png}
+  	\caption{routed layout of a symmetry}
+	\label{fig:symmetry_routed}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\subfloat[basic line expansion router]{\includegraphics[scale=0.75]{FIG/miller_amplifier_routed_smaller_basic_line_expansion.png}}
+	\subfloat[extended line expansion router]{\includegraphics[scale=0.75]{FIG/miller_amplifier_routed_smaller_extended_line_expansion.png}}
+	\caption{two similar placements without a common centroid routed}
+	\label{fig:miller_amplifier_smaller_routed_line_expansion_router}
+\end{figure}
