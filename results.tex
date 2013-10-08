@@ -11,6 +11,16 @@ For the second one, the extend line expansion router, it becomes a lot more diff
 	\label{fig:miller_amplifier_routed_line_expansion_router}
 \end{figure}
 
+To proof if the Plantage produces better results for circuits without common centroids I have created two layouts, one with the basic line expansion router and one with the extended version. As it can be seen a far smaller distance between the modules is necessary. \nref{fig:miller_amplifier_smaller_routed_line_expansion_router}.
+
+\begin{figure}
+	\centering
+	\subfloat[basic line expansion router]{\includegraphics[scale=0.6]{FIG/miller_amplifier_routed_smaller_basic_line_expansion.png}}
+	\subfloat[extended line expansion router]{\includegraphics[scale=0.6]{FIG/miller_amplifier_routed_smaller_extended_line_expansion.png}}
+	\caption{two similar placements without a common centroid routed}
+	\label{fig:miller_amplifier_smaller_routed_line_expansion_router}
+\end{figure}
+
 To show also the results of a layout with a symmetry I have prepared one simple example which contains only three modules \nref{fig:symmetry_routed}. Two of them form a pair of a symmetry and the other one is a single module in this symmetry. In the layout can be seen that the two connections between the symmetric modules are connected nearly symmetric the third module. The maximum allowed difference in resistance is 5\%, which seems to be hold by both connections. One of them is optical quite unsymmetric connected, but it starts on both ends on POLY. Therefore, the resistance of the whole connection is dominated by those two small parts.
 
 \begin{figure}
