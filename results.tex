@@ -8,7 +8,6 @@ To proof if the Plantage produces better results for circuits without common cen
 To show also the results of a layout with a symmetry I have prepared one simple example which contains only three modules \nref{fig:symmetry_routed}. Two of them form a pair of a symmetry and the other one is a single module in this symmetry. In the layout can be seen that the two connections between the symmetric modules are connected nearly symmetric the third module. The maximum allowed difference in resistance is 5\%, which seems to be hold by both connections. One of them is optical quite unsymmetric connected, but it starts on both ends on POLY. Therefore, the resistance of the whole connection is dominated by those two small parts.
 
 \section{Conclusion}
-The results above show that the layouts created by plantage are at least feasible. Additionally, they also consider several constraints for analog circuits. The results are for sure not yet perfect, but this wasn't the aim of this thesis. The really main point was to implement the routing and make it easy to replace the algorithm later, as it is not sure which solution will be the best for the hierarchical placer. This can be done now easily, it is only necessary to inherit from the class Router.
 
 \begin{figure}
 	\centering
@@ -17,12 +16,16 @@ The results above show that the layouts created by plantage are at least feasibl
 	\label{fig:class_diagram_router}
 \end{figure}
 
+The results above show that the layouts created by plantage are at least feasible. Additionally, they also consider several constraints for analog circuits. The results are for sure not yet perfect, but this wasn't the aim of this thesis. The really main point was to implement the routing and make it easy to replace the algorithm later, as it is not sure which solution will be the best for the hierarchical placer. This can be done now easily, it is only necessary to inherit from the class Router.
+
+\begin{samepage}
 Finally, I was able to reach all the targets claimed in the introduction:
 \begin{itemize}
-\item I have implemented a line expansion router, which creates, in most cases \footnote{In the cases where the layout is not design rule clean it is usually easy to fix the problem manually. For instance, in special cases the minimum notch rule may be harmed, but then the gap can just be filled up.}, design rule clean routes \footnote{For capacities the ICFBInterface does not provide enough information about the additional guard ring, therefore it can not be considered} and considers symmetries.
-\item Based on the previous router I have implemented an extension of the line expansion router, which tries to reduce the parasitics.
-\item As it isn't sure which one will fit best to the hierarchical placer it is easy to replace the router with a different implementation.
+\item a line expansion router, which creates, in most cases \footnote{In the cases where the layout is not design rule clean it is usually easy to fix the problem manually. For instance, in special cases the minimum notch rule may be harmed, but then the gap can just be filled up.}, design rule clean routes \footnote{For capacities the ICFBInterface does not provide enough information about the additional guard ring, therefore it can not be considered} and considers symmetries
+\item based on the previous router an extended version, which tries to reduce the parasitics
+\item a software design, where the routing algorithm can be exchanged easily
 \end{itemize}
+\end{samepage}
 
 \begin{figure}
 	\centering
