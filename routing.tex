@@ -222,7 +222,10 @@ This is the point where the line expansion feasibility router comes into play. T
 
 \subsection{Extended Line Expansion Router}
 This extended version of the line expansion router is based on the simple version. So it is again a sequential approach with the same drawbacks and advantages as the previous versions. The main difference to it is how I select the routes. I actually create the routes in the same way as for the previous version. To improve the performance I make a pre-selection based on the resistance, which can be done easily, as the routes are already sorted by there resistance. For all the routes, which are then left, I calculate the total edge and area capacity that would turn out if this route is added to the connections of the previously routed nets. I then combine these values together to the parasitic sum
-\[p = w_R \cdot R + w_{C_a} \cdot C_a + w_{C_e} \cdot C_e\]
+\begin{equation}
+	\label{eq:extended_line_expansion_objective}
+	p = w_R \cdot R + w_{C_a} \cdot C_a + w_{C_e} \cdot C_e
+\end{equation}
 (where $w_i$ are the weights and $R$, $C_a$ and $C_e$ are the parasitics as defined in \secref{sec:electrical_rules}) on which the actual selection is based.
 
 \begin{figure}
