@@ -19,12 +19,13 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{subfig}
 \usepackage{xcolor}
 \usepackage{array}
 \usepackage{fixltx2e}
 \usepackage{float}
 \usepackage{floatflt}
+\usepackage{subfig}
+\usepackage[subfigure]{tocloft}
 
 \usepackage{blindtext}
 
@@ -37,6 +38,11 @@
 \newcommand{\neweqref}[1]{{(Equation \ref{#1})}}
 \definecolor{maroon}{rgb}{.5,0,0}
 \definecolor{darkgreen}{rgb}{0,.5,0}
+
+\newcommand{\listequationsname}{List of Equations}
+\newlistof{equationnumber}{equ}{\listequationsname}
+\newcommand{\equationnumber}[1]{%
+\addcontentsline{equ}{equationnumber}{\protect\numberline{\theequation} #1}\par}
 
 \begin{document}
 \authors{Benedikt Schmidt}
@@ -63,6 +69,7 @@
 \include{results}
 
 \listoffigures
+\listofequationnumber
 \bibliographystyle{tumbib}
 \bibliography{custom}
 

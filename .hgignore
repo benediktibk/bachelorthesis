@@ -13,3 +13,4 @@ syntax: glob
 *.blg
 thesis.bib
 *.bak
+*.equ
