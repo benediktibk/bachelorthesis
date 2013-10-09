@@ -1,7 +1,7 @@
 \chapter{Definitions}
 
 \section{Module}
-One module in Plantage is just a rectangular shape. From that point of view every circuit element can be seen as modules, transistors, capacitors and so on. For the placement only width and height of the module are important. The actual dimensions are stored in the variant of the module. Every module can have various different variants, for example, with the same electrical behaviour, but different numbers of gates \nref{fig:modules_with_different_gate_number}.
+One module in Plantage is just a rectangular shape. From that point of view, every circuit element can be seen as modules, transistors, capacitors and so on. For the placement only width and height of the module are important. The actual dimensions are stored in the variant of the module. Every module can have various different variants, for example, with the same electrical behaviour, but different numbers of gates \figref{fig:modules_with_different_gate_number}.
 
 \begin{figure}
 	\centering
@@ -13,7 +13,7 @@ One module in Plantage is just a rectangular shape. From that point of view ever
 Also a module typically has some pins, which are named and, additionally, have a net name as well, according to the net they belong to. One pin can have some contact areas, but must have at least one. Every contact area is only a rectangular shape, which has a height and width and is in a relative position to the module position.
 
 \section{Group}
-In Plantage there are two different types of groups. One type contains only groups and the other one only modules \nref{fig:group_of_modules}. At the moment it is not possible to mix modules and groups in one group. This is important because slightly different algorithms must be applied for every type of group.
+In Plantage there are two different types of groups. One type contains only groups and the other one only modules \figref{fig:group_of_modules}. At the moment it is not possible to mix modules and groups in one group. This is important because slightly different algorithms must be applied for every type of group.
 
 \begin{figure}
 	\centering
@@ -24,7 +24,10 @@ In Plantage there are two different types of groups. One type contains only grou
 \end{figure}
 
 \section{Shape Function}
-A shape function is basically a list of possible layouts for a given circuit. This list is called shape function \nref{fig:shapefunction} because the minimum possible area for these placements is a hyperbolic function and the placements are located near this so-called \emph{pareto front}.
+A shape function is basically a list of possible layouts for a given circuit. This list is called shape function \figref{fig:shapefunction} because the minimum possible area for these placements is a hyperbolic function and the placements located near this forms a \emph{Pareto front}.
+
+% This is more like the definition for a Pareto front.
+% Here you should probably stress that the shape function here is different from what it is ususally defined. The definition for a shape function is usually, "The minimum height given as a function of the width  is called the shape function of the layout." So this makes it a "function."
 
 \begin{figure}
 	\centering
@@ -41,7 +44,7 @@ In the design of analog circuits many constraints have to be met. They mainly co
 
 \subsection{Symmetry Constraint}
 \label{subsec:symmetry_constraint}
-Symmetry constraints define a vertical or horizontal symmetry axis for modules. They can contain two different types: single modules and pair modules. Single modules are placed self-symmetrically to the axis, pair modules are symmetric pairwise. For the symmetry only the centers of gravity are considered, therefore pair modules can have different shapes. \nref{fig:constraint_symmetry}
+Symmetry constraints define a vertical or horizontal symmetry axis for modules. They can contain two different types: single modules and pair modules. Single modules are placed self-symmetrically to the axis, pair modules are symmetric pairwise. For the symmetry here, only the centers of gravity are considered, therefore pair modules can have different shapes. \figref{fig:constraint_symmetry}
 
 \begin{figure}
 	\centering
@@ -51,7 +54,7 @@ Symmetry constraints define a vertical or horizontal symmetry axis for modules. 
 \end{figure}
 
 \subsection{Alignment Constraint}
-An alignment constraint defines a relative position between modules, vertical or horizontal \nref{fig:constraint_alignment}. In the terminology of Plantage you always have a A- and a B-module. In the case of a horizontal alignment the A-module is placed left to the B-module, in the other case of a vertical alignment the A-module is placed below the B-module. Additionally, it is possible to define a minimum distance between the modules.
+An alignment constraint defines a relative position between modules, vertical or horizontal \figref{fig:constraint_alignment}. In the terminology of Plantage you always have a A- and a B-module. In the case of a horizontal alignment the A-module is placed left to the B-module, in the other case of a vertical alignment the A-module is placed below the B-module. Additionally, it is possible to define a minimum distance between the modules.
 
 \begin{figure}
 	\centering
@@ -93,9 +96,9 @@ The technology rules can have four different types:
 
 The first two rules, considering minimum width and spaces, have one value, the actual minimum width or distance, and the layer, which they should be applied on. The last two types also have a value but, additionally, two layers on which they must be considered. All the rules must be applied to the placement and the routes.
 
-The minimum spacing rule \nref{fig:technology_rule_spacing} is quite easy to understand, as it only describes a minimal distance between two shapes on a certain layer. These rules may not be considered if deep trench isolated transistors are concerned, but this does not affect the routing. Deep trench isolated transistors only result in a possible bigger, combined, forbidden area for routes.
+The minimum spacing rule \figref{fig:technology_rule_spacing} is quite easy to understand, as it only describes a minimal distance between two shapes on a certain layer. These rules may not be considered if deep trench isolated transistors are concerned, but this does not affect the routing. Deep trench isolated transistors only result in a possible bigger, combined, forbidden area for routes.
 
-Minimum widths are very central technology rules for the routing \nref{fig:technology_rule_width}. These values are usually used as width for the routes. Only in special cases, if for example a high current must be transported, the designer may choose a bigger width. Nevertheless, the rules can be different for every layer.
+Minimum widths are very central technology rules for the routing \figref{fig:technology_rule_width}. These values are usually used as width for the routes. Only in special cases, if for example a high current must be transported, the designer may choose a bigger width. Nevertheless, the rules can be different for every layer.
 
 \begin{figure}
 	\centering
@@ -108,7 +111,7 @@ The minimum enclosure rules describe minimum distances, which need to be met bet
 
 For some Via-Definitions, for example in the Hit-Kit of AMS, some enclosure rules are missing, at least in the technology file, but for the design rule check these rules are still existing. In these cases, I have to assume that there is a certain default value for the minimum enclosure rules: 0.2$\mu$m to the layer below and 0.15$\mu$m to the layer above a via-layer. These values work at least for the technology definition of AMS, but they may differ in the definition of other manufacturers.
 
-Every via-definition must have two minimum enclosure rules, one for every layer, which is connected through the via. Additionally, we need one minimum width rule for the via-layer, which describes the width of the actual connection. From these three rules we then can calculate the dimensions of the via, which typically differ for the two layers \nref{fig:technology_rule_via_dimensions}.
+Every via-definition must have two minimum enclosure rules, one for every layer, which is connected through the via. Additionally, we need one minimum width rule for the via-layer, which describes the width of the actual connection. From these three rules we then can calculate the dimensions of the via, which typically differ for the two layers \figref{fig:technology_rule_via_dimensions}.
 
 \begin{equation}
 \label{eq:via_dimension}
@@ -122,7 +125,7 @@ Every via-definition must have two minimum enclosure rules, one for every layer,
 	\label{fig:technology_rule_via_dimensions}
 \end{figure}
 
-Last but not least, there are several minimum notch rule definitions available in the technology definition of AMS. They are mostly used for the internal layout design of, for example, a transistor. During the routing they define, for instance, a minimum distance between two vias, connected by a route, as this construction forms a notch \nref{fig:technology_rule_notch}.
+Last but not least, there are several minimum notch rule definitions available in the technology definition of AMS. They are mostly used for the internal layout design of, for example, a transistor. During the routing they define, for instance, a minimum distance between two vias, connected by a route, as this construction forms a notch \figref{fig:technology_rule_notch}.
 
 \begin{figure}
 	\centering
@@ -133,7 +136,7 @@ Last but not least, there are several minimum notch rule definitions available i
 
 \section{Electrical Rules}
 \label{sec:electrical_rules}
-In the tech-file from the manufacturer there also are electrical rules implied. These rules describe the exact electrical behaviour and can be used, for example, for a simulation of the whole circuit. In the routing algorithms, that will be described later on \nref{sec:implemented_algorithms} I will use these values to optimize the behaviour of the circuit layout. Therefore, I want to describe how they can be interpreted.
+In the tech-file from the manufacturer there also are electrical rules implied. These rules describe the exact electrical behaviour and can be used, for example, for a simulation of the whole circuit. In the routing algorithms, that will be described later on \secref{sec:implemented_algorithms} I will use these values to optimize the behaviour of the circuit layout. Therefore, I want to describe how they can be interpreted.
 
 The first important value is the sheet resistance. This value defines the resistance of a layer and I use it to calculate the resistance of the routes. I do not need an exact resistance, only a tool to measure and compare, which takes the different layers into account. Therefore, my personal definition for this algorithm of the sheet resistance will possibly be not the right one. But in my point of view it is useful in this case. For routes on one layer I just multiply the sheet resistance value with the length of the route, as I always use the minimum width for routes. A via doesn't really have a length, so I multiply the value with the area. Afterwards, these two results are summed up for a whole connection and this then represents the resistance of this connection.
 
