@@ -1,7 +1,7 @@
 \chapter{Definitions}
 
 \section{Module}
-One module in Plantage is just a rectangular shape. From that point of view, every circuit element can be seen as modules, transistors, capacitors and so on. For the placement only width and height of the module are important. The actual dimensions are stored in the variant of the module. Every module can have various different variants, for example, with the same electrical behaviour, but different numbers of gates \figref{fig:modules_with_different_gate_number}.
+One module in Plantage is just a rectangular shape. From that point of view, all circuit elements can be seen as modules, transistors, capacitors and so on. For the placement only width and height of the module are important. The actual dimensions are stored in the variant of the module. Every module can have various different variants, for example, with the same electrical behavior, but different numbers of gates \figref{fig:modules_with_different_gate_number}.
 
 \begin{figure}
 	\centering
@@ -27,7 +27,7 @@ In Plantage there are two different types of groups. One type contains only grou
 A shape function is basically a list of possible layouts for a given circuit. This list is called shape function \figref{fig:shapefunction} because the minimum possible area for these placements is a hyperbolic function and the placements located near this forms a \emph{Pareto front}.
 
 % This is more like the definition for a Pareto front.
-% Here you should probably stress that the shape function here is different from what it is ususally defined. The definition for a shape function is usually, "The minimum height given as a function of the width  is called the shape function of the layout." So this makes it a "function."
+% Here you should probably stress that the shape function is different from what it is usually defined as. The definition for a shape function is usually, "The minimum height given as a function of the width is called the shape function of the layout." So this makes it a "function."
 
 \begin{figure}
 	\centering
@@ -44,7 +44,7 @@ In the design of analog circuits many constraints have to be met. They mainly co
 
 \subsection{Symmetry Constraint}
 \label{subsec:symmetry_constraint}
-Symmetry constraints define a vertical or horizontal symmetry axis for modules. They can contain two different types: single modules and pair modules. Single modules are placed self-symmetrically to the axis, pair modules are symmetric pairwise. For the symmetry here, only the centers of gravity are considered, therefore pair modules can have different shapes. \figref{fig:constraint_symmetry}
+Symmetry constraints define a vertical or horizontal symmetry axis for modules. They can contain two different types: single modules and pair modules. Single modules are placed self-symmetrically to the axis, pair modules are pairwise symmetrical. For the symmetry here, only the centers of gravity are considered, therefore pair modules can have different shapes. \figref{fig:constraint_symmetry}
 
 \begin{figure}
 	\centering
@@ -54,7 +54,7 @@ Symmetry constraints define a vertical or horizontal symmetry axis for modules. 
 \end{figure}
 
 \subsection{Alignment Constraint}
-An alignment constraint defines a relative position between modules, vertical or horizontal \figref{fig:constraint_alignment}. In the terminology of Plantage you always have a A- and a B-module. In the case of a horizontal alignment the A-module is placed left to the B-module, in the other case of a vertical alignment the A-module is placed below the B-module. Additionally, it is possible to define a minimum distance between the modules.
+An alignment constraint defines a relative position between modules, vertical or horizontal \figref{fig:constraint_alignment}. In the terminology of Plantage you always have an A- and a B-module. In the case of a horizontal alignment the A-module is placed left to the B-module, in the other case of a vertical alignment the A-module is placed below the B-module. Additionally, it is possible to define a minimum distance between the modules.
 
 \begin{figure}
 	\centering
@@ -64,13 +64,13 @@ An alignment constraint defines a relative position between modules, vertical or
 \end{figure}
 
 \subsection{Group Symmetry Constraint}
-The group symmetry constraint is nearly the same as the symmetry constraint. The only difference is that it can be applied to groups instead of modules. Like the normal symmetry constraint we can have single groups, which are self-symmetrically placed, or pair groups, which are pairwise symmetric to the symmetry axis.
+The group symmetry constraint is nearly the same as the symmetry constraint. The only difference is that it can be applied to groups instead of modules. Like the normal symmetry constraint we can have single groups, which are self-symmetrically placed, or pair groups, which are pairwise symmetrical to the symmetry axis.
 
 \subsection{Group Alignment Constraint}
 Once again the group alignment constraint is nearly the same as the alignment constraint where the only difference is that it can be applied to groups.
 
 \subsection{Same Variants Constraint}
-The same variants constraint is very important too, for example, especially for differential pairs. To get the same characteristics in one placement as far as possible these modules should have the same variants. They can still have various different variants, but in one certain placement for these modules the same variant is selected.
+The same variants constraint is very important too, for example, especially for differential pairs. To get the same characteristics in one placement, as far as possible, these modules should have the same variants. They can still have various different variants, but in one certain placement for these modules the same variant is selected.
 
 The implementation of this constraint is based on matching the names of the variants. Therefore it is still possible that the variants differ, for example the variant for one module is mirrored to the ones of the other part of a pair. This is very useful, as it gives the user a lot more flexibility.
 
@@ -137,11 +137,11 @@ Last but not least, there are several minimum notch rule definitions available i
 
 \section{Electrical Rules}
 \label{sec:electrical_rules}
-In the tech-file from the manufacturer there also are electrical rules implied. These rules describe the exact electrical behaviour and can be used, for example, for a simulation of the whole circuit. In the routing algorithms, that will be described later on \secref{sec:implemented_algorithms} I will use these values to optimize the behaviour of the circuit layout. Therefore, I want to describe how they can be interpreted.
+In the tech-file from the manufacturer there also are electrical rules implied. These rules describe the exact electrical behavior and can be used, for example, for a simulation of the whole circuit. In the routing algorithms, that will be described later on \secref{sec:implemented_algorithms} I will use these values to optimize the behavior of the circuit layout. Therefore, I want to describe how they can be interpreted.
 
-The first important value is the sheet resistance. This value defines the resistance of a layer and I use it to calculate the resistance of the routes. I do not need an exact resistance, only a tool to measure and compare, which takes the different layers into account. Therefore, my personal definition for this algorithm of the sheet resistance will possibly be not the right one. But in my point of view it is useful in this case. For routes on one layer I just multiply the sheet resistance value with the length of the route, as I always use the minimum width for routes. A via doesn't really have a length, so I multiply the value with the area. Afterwards, these two results are summed up for a whole connection and this then represents the resistance of this connection.
+The first important value is the sheet resistance. This value defines the resistance of a layer and I use it to calculate the resistance of the routes. I do not need an exact resistance, only a tool to measure and compare, which takes the different layers into account. Therefore, my personal definition for this algorithm of the sheet resistance will possibly be not the right one. But from my point of view it is useful in this case. For routes on one layer I just multiply the sheet resistance value with the length of the route, as I always use the minimum width for routes. A via does not really have a length, so I multiply the value with the area. Afterwards, these two results are summed up for a whole connection and this then represents the resistance of this connection.
 
-The other two used values are the edge- and area-capacitance. The edge-capacitance illustrates the capacitor between two neighbour routes on the same layer, whereas the area-capacitance describes the capacitor between two routes on the same position but on different layers. The total capacitance ($C_e$ and $C_a$) is calculated from the length where two routes are neighbours ($l$), the distance between them ($d$) in case of an edge-capacitance, the width they overlap, ($w$) in case of an area-capacitance, and the values from the technology file ($C'_e$ and $C'_a$).
+The other two used values are the edge- and area-capacitance. The edge-capacitance illustrates the capacitor between two neighbor routes on the same layer, whereas the area-capacitance describes the capacitor between two routes on the same position but on different layers. The total capacitance ($C_e$ and $C_a$) is calculated from the length where two routes are neighbors ($l$), the distance between them ($d$) in case of an edge-capacitance, the width they overlap, ($w$) in case of an area-capacitance, and the values from the technology file ($C'_e$ and $C'_a$).
 \begin{equation}
 	\label{eq:area_capacitance}
 	C_a = C'_a \cdot l \cdot w
@@ -154,7 +154,7 @@ The other two used values are the edge- and area-capacitance. The edge-capacitan
 \end{equation}
 \equationname{calculation of the edge-capacitance}
 
-All in all, the aforementioned definitions are most likely not the right ones but the results are multiplied with adjustable weights afterwards anyway. Therefore, the exact values are not a matter of interest, the results are only used as rough estimations and measurement.
+All in all, the aforementioned definitions are most likely not the right ones but the results are multiplied with adjustable weights afterwards anyway. Therefore, the exact values are not a matter of interest; the results are only used as rough estimations and measurement.
 
 
 
